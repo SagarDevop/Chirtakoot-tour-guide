@@ -1,0 +1,164 @@
+import React, { useState } from 'react';
+import {useNavigate } from 'react-router-dom';
+import axios from 'axios'; // Make sure axios is installed: npm install axios
+
+
+
+function AuthForm() {
+  const navigate = useNavigate()
+  const [isLogin, setIsLogin] = useState(true);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    password: '',
+  });
+
+
+
+  const handleChange = (e) => {
+    setFormData({ 
+      ...formData, 
+      [e.target.name]: e.target.value 
+    });
+  };
+
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    let res;
+    if (isLogin) {
+      res = await axios.post('http://localhost:8000/api/login', {
+        email: formData.email,
+        password: formData.password,
+      });
+      alert('Login Successful');
+      navigate('/')
+      
+    } else {
+      res = await axios.post('http://localhost:8000/api/signin', {
+        name: formData.name,
+        email: formData.email,
+        password: formData.password,
+      });
+      alert('Sign Up Successful');
+      navigate('/')
+    }
+
+    // Save the user data returned from backend in localStorage
+    localStorage.setItem('user', JSON.stringify(res.data.user));
+    window.dispatchEvent(new Event("res.data.user"));
+
+    console.log('Response:', res.data);
+
+  } catch (error) {
+    console.error(isLogin ? 'Login error:' : 'Sign Up error:', error);
+    alert(isLogin ? 'Login Failed' : 'Sign Up Failed');
+  }
+
+  setFormData({ name: '', email: '', password: '' });
+};
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4 mt-20">
+      <div className="max-w-md w-full bg-white rounded shadow p-6">
+        <h2 className="text-2xl font-bold text-center mb-6">
+          {isLogin ? 'Login to Your Account' : 'Create a New Account'}
+        </h2>
+
+        {/* Toggle Buttons */}
+        <div className="flex justify-center mb-4">
+          <button
+            className={`px-4 py-2 font-semibold rounded-l ${
+              isLogin ? 'bg-blue-500 text-white' : 'bg-gray-200'
+            }`}
+            onClick={() => setIsLogin(true)}
+          >
+            Login
+          </button>
+          <button
+            className={`px-4 py-2 font-semibold rounded-r ${
+              !isLogin ? 'bg-blue-500 text-white' : 'bg-gray-200'
+            }`}
+            onClick={() => setIsLogin(false)}
+          >
+            Sign Up
+          </button>
+        </div>
+
+        {/* Form */}
+        <form className="space-y-4" onSubmit={handleSubmit}>
+          {!isLogin && (
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Full Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className="w-full px-3 py-2 border rounded"
+                placeholder="Your full name"
+                required={!isLogin}
+              />
+            </div>
+          )}
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700">
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full px-3 py-2 border rounded"
+              placeholder="example@gmail.com"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700">
+              Password
+            </label>
+            <input
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              className="w-full px-3 py-2 border rounded"
+              placeholder="********"
+              required
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition"
+          >
+            {isLogin ? 'Login' : 'Sign Up'}
+          </button>
+        </form>
+
+        {/* Optional Link */}
+        <p className="mt-4 text-center text-sm text-gray-600">
+          {isLogin ? "Don't have an account?" : 'Already have an account?'}{' '}
+          <button
+            className="text-blue-500 underline"
+            onClick={() => {
+              setIsLogin(!isLogin);
+              setFormData({ name: '', email: '', password: '' }); // Reset form
+            }}
+          >
+            {isLogin ? 'Sign Up' : 'Login'}
+          </button>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default AuthForm;
