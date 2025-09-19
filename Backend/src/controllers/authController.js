@@ -72,28 +72,37 @@ export const login = async(req, res) =>{
    try {
     const {email, password} = req.body;
     if(!email || !password){
-        throw new ApiError(
-            401,
-            "All Fields are required"
-        )
+        return res.status(400).json({
+        success: false,
+        statusCode: 400,
+        message: "All feild required!",
+        data: null,
+        errors: [],
+      });
     }
 
     const exitingUser = await User.findOne({email})
 
     if(!exitingUser){
-        throw new ApiError(
-            402,
-            "user does not exists"
-        )
+        return res.status(400).json({
+        success: false,
+        statusCode: 400,
+        message: "User not exisits!",
+        data: null,
+        errors: [],
+      });
     }
 
     const validatePassword =await exitingUser.isCorrectPassword(password)
 
     if(!validatePassword){
-        throw new ApiError(
-            401,
-            "your password is invalid"
-        )
+        return res.status(400).json({
+        success: false,
+        statusCode: 400,
+        message: "Invalid Password!",
+        data: null,
+        errors: [],
+      });
     }
 
     const {accessToken, refreshToken} = await generateAccessAndRefreshToken(exitingUser._id)
