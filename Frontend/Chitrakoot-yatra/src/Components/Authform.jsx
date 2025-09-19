@@ -60,7 +60,8 @@ function AuthForm() {
 
   } catch (error) {
     console.error(isLogin ? 'Login error:' : 'Sign Up error:', error);
-    alert(isLogin ? 'Login Failed' : 'Sign Up Failed');
+
+    toast.error(errorMessage, { duration: 3000 });
   }
 
   setFormData({ name: '', email: '', password: '' });
