@@ -20,17 +20,25 @@ export const signin = async (req, res) => {
 
         const {email, name, password} = req.body;
         if(!email || !name || !password){
-            throw new ApiError(
-                410,
-                "all field are required"
-            )
-        }
+        return res.status(400).json({
+        success: false,
+        statusCode: 400,
+        message: "All fields are required",
+        data: null,
+        errors: [],
+      });
+    }
+            
+
         const exitingUser =  await User.findOne({email})
         if(exitingUser){
-           return new ApiError(
-                400,
-                "user already exisits"
-            )
+        return res.status(400).json({
+        success: false,
+        statusCode: 400,
+        message: "User already exisits",
+        data: null,
+        errors: [],
+      });
         }
         const user = await User.create({
             name,
