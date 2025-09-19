@@ -31,7 +31,10 @@ function AuthForm() {
       res = await axios.post('http://localhost:8000/api/login', {
         email: formData.email,
         password: formData.password,
-      });
+      },{
+         credentials: true,
+      }
+    );
       alert('Login Successful');
       navigate('/')
       
@@ -40,16 +43,19 @@ function AuthForm() {
         name: formData.name,
         email: formData.email,
         password: formData.password,
+      },{
+         credentials: true,
       });
       alert('Sign Up Successful');
       navigate('/')
     }
 
     // Save the user data returned from backend in localStorage
-    localStorage.setItem('user', JSON.stringify(res.data.user));
-    window.dispatchEvent(new Event("res.data.user"));
+    
+    localStorage.setItem('user', JSON.stringify(res.data.data));
+    window.dispatchEvent(new Event("res.data.data"));
 
-    console.log('Response:', res.data);
+    
 
   } catch (error) {
     console.error(isLogin ? 'Login error:' : 'Sign Up error:', error);
