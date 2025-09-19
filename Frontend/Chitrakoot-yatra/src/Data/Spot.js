@@ -3,9 +3,10 @@ const Spot = [
     name: "रामघाट",
     image: "https://media.gettyimages.com/id/1223014100/photo/chitrakoot-life-at-the-ghats.jpg?s=612x612&w=0&k=20&c=YITNezxRqlh0RSLmnOFLVefONBExEU4X84DVCBwKqVg=",
     images: [
-      "https://media.gettyimages.com/id/1223014100/photo/chitrakoot-life-at-the-ghats.jpg",
-      "https://media.gettyimages.com/id/1198957292/photo/ramghat-at-chitrakoot.jpg",
-      "https://media.gettyimages.com/id/1177603021/photo/devotees-performing-aarti.jpg"
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/65/b3/b1/caption.jpg?w=1200&h=-1&s=1",
+      "https://s7ap1.scene7.com/is/image/incredibleindia/ram-ghat-chitrakoot-madhya-pradesh-1-attr-hero?qlt=82&ts=1742999504563",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2-mrg9S_uSnUK9YRHnGwBu0DgqCQ0FwZvkg&s",
+      "https://thumbs.dreamstime.com/b/december-chitrakoot-india-boats-banks-mandakini-river-ram-ghat-chitrkoot-parked-mandakani-inida-192377598.jpg"
     ],
     description: "A sacred ghat on the banks of Mandakini River.",
     fullDescription: "Ramghat is a holy riverfront on the banks of the Mandakini River in Chitrakoot, where Lord Ram, Sita, and Lakshman are believed to have bathed during their exile. It's a vibrant spiritual spot known for its evening aarti and religious significance.",
