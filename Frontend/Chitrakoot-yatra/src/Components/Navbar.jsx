@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Home, Map, Car, Hotel, User, Menu, X } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import axios from "axios";
 
 
 export default function Navbar() {
@@ -45,11 +46,21 @@ export default function Navbar() {
 
 
 
-  const handleLogout = () => {
-    localStorage.removeItem('user');
-    setUser(null);
-    navigate('/'); // Redirect to homepage after logout
-  };
+  const handleLogout = async () => {
+  console.log("Logout clicked ✅"); // Debug log
+  try {
+    await axios.post("http://localhost:8000/api/logout", {}, { withCredentials: true });
+
+    localStorage.removeItem("user"); // clear user info
+    setUser(null); // update navbar
+    window.dispatchEvent(new Event("userUpdated")); // let other components know
+
+    navigate("/"); // go home
+  } catch (error) {
+    console.error("Logout error:", error.response?.data || error.message);
+  }
+};
+
 
   const centerLinks = [
     { name: "Home", icon: <Home size={20} />, to: "/" },
