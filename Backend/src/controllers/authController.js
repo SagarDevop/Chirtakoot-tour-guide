@@ -27,7 +27,7 @@ export const signin = async (req, res) => {
         }
         const exitingUser =  await User.findOne({email})
         if(exitingUser){
-            throw new ApiError(
+           return new ApiError(
                 400,
                 "user already exisits"
             )
