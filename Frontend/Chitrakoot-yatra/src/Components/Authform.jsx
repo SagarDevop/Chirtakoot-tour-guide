@@ -47,7 +47,7 @@ function AuthForm() {
       },{
          credentials: true,
       });
-      alert('Sign Up Successful');
+      toast.success("welcome sir in our web")
       navigate('/')
     }
 
