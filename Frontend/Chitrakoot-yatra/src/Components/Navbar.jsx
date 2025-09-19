@@ -4,6 +4,7 @@ import { Home, Map, Car, Hotel, User, Menu, X } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 
 export default function Navbar() {
@@ -47,14 +48,14 @@ export default function Navbar() {
 
 
   const handleLogout = async () => {
-  console.log("Logout clicked ✅"); // Debug log
+  
   try {
-    await axios.post("http://localhost:8000/api/logout", {}, { withCredentials: true });
+    await axios.post("https://chitrakoot-yatra.onrender.com/api/logout", {}, { withCredentials: true });
 
-    localStorage.removeItem("user"); // clear user info
-    setUser(null); // update navbar
-    window.dispatchEvent(new Event("userUpdated")); // let other components know
-
+    localStorage.removeItem("user"); 
+    setUser(null); 
+    window.dispatchEvent(new Event("userUpdated"));
+    toast.error("BYY BYY, we miss you 😢",{ autoClose: 2000});
     navigate("/"); // go home
   } catch (error) {
     console.error("Logout error:", error.response?.data || error.message);

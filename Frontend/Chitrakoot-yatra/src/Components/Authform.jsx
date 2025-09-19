@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {useNavigate } from 'react-router-dom';
-import axios from 'axios'; // Make sure axios is installed: npm install axios
+import axios from 'axios'; 
+import toast from "react-hot-toast";
 
 
 
@@ -28,18 +29,18 @@ function AuthForm() {
   try {
     let res;
     if (isLogin) {
-      res = await axios.post('http://localhost:8000/api/login', {
+      res = await axios.post('https://chitrakoot-yatra.onrender.com/api/login', {
         email: formData.email,
         password: formData.password,
       },{
          credentials: true,
       }
     );
-      alert('Login Successful');
+      toast.success("Login successfully 🙏", { autoClose: 2000});
       navigate('/')
       
     } else {
-      res = await axios.post('http://localhost:8000/api/signin', {
+      res = await axios.post('https://chitrakoot-yatra.onrender.com/api/signin', {
         name: formData.name,
         email: formData.email,
         password: formData.password,

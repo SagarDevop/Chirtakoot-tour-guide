@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { Toaster } from "react-hot-toast";
+import "react-toastify/dist/ReactToastify.css";
 import './App.css'
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
@@ -24,7 +25,43 @@ function App() {
           <Route path="/account" element={<AuthForm />} />
         </Routes>
       
-     
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+        toastOptions={{
+          duration: 4000, // how long toast stays
+          style: {
+            background: 'rgba(17, 24, 39, 0.8)', // more darker glassy
+            color: '#f9fafb', // almost white
+            backdropFilter: 'blur(12px)',
+            border: '1px solid rgba(255,255,255,0.2)',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
+            borderRadius: '16px',
+            padding: '16px 24px',
+          },
+          success: {
+            style: {
+              background: 'rgba(34, 197, 94, 0.8)', // green glass for success
+              color: 'white',
+            },
+            iconTheme: {
+              primary: '#22c55e',
+              secondary: '#166534',
+            },
+          },
+          error: {
+            style: {
+              background: 'rgba(239, 68, 68, 0.8)', // red glass for error
+              color: 'white',
+            },
+            iconTheme: {
+              primary: '#ef4444',
+              secondary: '#7f1d1d',
+            },
+          },
+        }}
+      />
+
     </>
   )
 }
