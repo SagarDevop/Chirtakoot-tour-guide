@@ -101,7 +101,7 @@ const HeroVideoSection = () => {
       </div>
 
       {/* Overlapping Tester */}
-      <div className=" bg-green-950 h-screen absolute top-0 z-20 mt-[100vh] w-full flex justify-center">
+      <div className=" bg-[#414A37] h-screen absolute top-0 z-20 mt-[100vh] w-full flex justify-center">
         <div className="relative w-full h-screen bg-cover bg-center bg-fixed bg-[url('/assets/chitrakoot-overlay.jpg')] flex flex-col justify-center items-center text-white px-6 py-10">
           <div className="absolute inset-0 bg-black/60 z-0" />
           <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">

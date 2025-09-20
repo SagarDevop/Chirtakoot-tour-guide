@@ -67,9 +67,9 @@ function AuthForm() {
 };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4 mt-20">
-      <div className="max-w-md w-full bg-white rounded shadow p-6">
-        <h2 className="text-2xl font-bold text-center mb-6">
+    <div className="min-h-screen flex items-center justify-center bg-[#DBC2A6] p-4">
+      <div className="max-w-md w-full bg-[#414A37] mt-[12vh] rounded shadow p-6">
+        <h2 className="text-2xl font-bold text-white text-center mb-6">
           {isLogin ? 'Login to Your Account' : 'Create a New Account'}
         </h2>
 
@@ -77,7 +77,7 @@ function AuthForm() {
         <div className="flex justify-center mb-4">
           <button
             className={`px-4 py-2 font-semibold rounded-l ${
-              isLogin ? 'bg-blue-500 text-white' : 'bg-gray-200'
+              isLogin ? 'bg-green-900 text-white' : 'bg-gray-200'
             }`}
             onClick={() => setIsLogin(true)}
           >
@@ -85,7 +85,7 @@ function AuthForm() {
           </button>
           <button
             className={`px-4 py-2 font-semibold rounded-r ${
-              !isLogin ? 'bg-blue-500 text-white' : 'bg-gray-200'
+              !isLogin ? 'bg-green-900 text-white' : 'bg-gray-200'
             }`}
             onClick={() => setIsLogin(false)}
           >
@@ -144,17 +144,17 @@ function AuthForm() {
 
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition"
+            className="w-full bg-[#556B2F] text-white py-2 rounded hover:bg-[#344F1F] transition"
           >
             {isLogin ? 'Login' : 'Sign Up'}
           </button>
         </form>
 
         {/* Optional Link */}
-        <p className="mt-4 text-center text-sm text-gray-600">
+        <p className="mt-4 text-center text-sm text-white">
           {isLogin ? "Don't have an account?" : 'Already have an account?'}{' '}
           <button
-            className="text-blue-500 underline"
+            className="text-yellow-100 underline"
             onClick={() => {
               setIsLogin(!isLogin);
               setFormData({ name: '', email: '', password: '' }); // Reset form

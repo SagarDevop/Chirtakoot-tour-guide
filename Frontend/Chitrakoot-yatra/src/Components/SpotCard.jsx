@@ -38,32 +38,44 @@ const SpotCard = ({ name, image, description, mapLink, category }) => {
   };
 
   return (
-    <div
-      ref={cardRef}
-      className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl text-white transition-all duration-300"
-    >
-     <img src={image} alt={name} className="w-full h-48 object-cover" />
+   <div
+  ref={cardRef}
+  className="w-[28vw] h-[55vh] bg-[#99744A] backdrop-blur-md border border-white/20 p-4 rounded-xl text-white transition-all duration-300 flex flex-col"
+>
+  <img
+    src={image}
+    alt={name}
+    className="w-full h-40 object-cover rounded-md"
+  />
 
-      <div className="p-4">
-        <h2 className="text-xl font-bold text-yellow-700">{name}</h2>
-        <p className="text-sm text-gray-700 mt-2">{description}</p>
-        <div className="mt-4 flex items-center justify-between">
-          
-          <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">
-            {category}
-          </span>
-          <button onClick={handleClick} className='text-xs bg-green-900 text-white  px-2 py-1 rounded-md'>more..</button>
-          <a
-            href={mapLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-700 text-sm font-medium"
-          >
-            📍 Show on Map
-          </a>
-        </div>
-      </div>
+  <div className="p-3 flex flex-col flex-grow">
+    <h2 className="text-lg font-bold text-yellow-300">{name}</h2>
+    <p className="text-sm text-gray-200 mt-2 flex-grow overflow-hidden line-clamp-4">
+      {description}
+    </p>
+
+    <div className="mt-4 flex items-center justify-between">
+      <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">
+        {category}
+      </span>
+      <button
+        onClick={handleClick}
+        className="text-xs bg-green-900 text-white px-2 py-1 rounded-md"
+      >
+        more..
+      </button>
+      <a
+        href={mapLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-300 hover:text-blue-500 text-sm font-medium"
+      >
+        📍 Show on Map
+      </a>
     </div>
+  </div>
+</div>
+
   );
 };
 
