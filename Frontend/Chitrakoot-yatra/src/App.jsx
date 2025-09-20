@@ -9,6 +9,9 @@ import Tester from './Components/Tester'
 import TouristSpots from './Home/TouristSpots'
 import SpotDetails from './Home/SpotDetails';
 import AuthForm from './Components/Authform';
+import Profile from './Components/Profile';
+import ReckshawTour from './Components/ReckshawTour';
+import Hotel from './Components/Hotel';
 
 function App() {
   
@@ -23,6 +26,9 @@ function App() {
           <Route path="/tourist-spot/:name" element={<SpotDetails />} />
           <Route path="/tester" element={<Tester />} />
           <Route path="/account" element={<AuthForm />} />
+          <Route path = "/profile" element={<Profile/>} />
+          <Route path = "/rickshaw-tour" element={<ReckshawTour/>} />
+          <Route path = "/hotels" element={<Hotel/>} />
         </Routes>
       
       <Toaster
