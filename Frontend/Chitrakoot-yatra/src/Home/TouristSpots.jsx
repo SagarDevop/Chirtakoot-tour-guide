@@ -14,18 +14,14 @@ const TouristSpots = () => {
   return (
     <div
       ref={ref}
-      className="mt-14 relative min-h-screen bg-gradient-to-b from-yellow-50 to-white py-12 px-6 overflow-hidden"
+      className=" relative min-h-screen py-12 px-6 overflow-hidden"
+      style={{ backgroundColor: "#DBC2A6" }} // ✅ Solid background
     >
-      <motion.img
-        src="https://i.pinimg.com/736x/83/d4/d9/83d4d9efc456435251c34d0748ad21f5.jpg"
-        alt="mandala background"
-        className="absolute inset-0 w-full h-full object-cover opacity-10 z-0 pointer-events-none "
-        style={{ y }}
-      />
+      {/* Removed mandala background image */}
 
       {/* Content Layer */}
       <motion.h1
-        className="relative z-10 text-4xl font-bold text-center text-yellow-800 mb-10"
+        className="relative z-10 text-4xl font-bold text-center text-yellow-900 mb-10"
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
