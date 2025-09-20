@@ -120,29 +120,64 @@ export default function Navbar() {
         {/* Right Side */}
         <div className="relative">
           {user ? (
-            <div>
+            <div className="relative">
+              {/* Profile Button */}
               <button
-                className="w-10 h-10 rounded-full bg-[#414A37] text-white font-bold text-lg flex items-center justify-center"
+                className="w-12 h-12 rounded-full bg-gradient-to-br from-[#414A37] to-[#2E3528] 
+               text-white font-bold text-lg flex items-center justify-center 
+               shadow-md hover:scale-105 transition-transform duration-200"
                 onClick={() => setProfileDropdown(!profileDropdown)}
               >
                 {user?.name?.charAt(0)?.toUpperCase() || "U"}
               </button>
 
+              {/* Dropdown */}
               {profileDropdown && (
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  className="absolute right-0 mt-2 w-48 bg-white/90 backdrop-blur-md border border-white/20 rounded-xl shadow-xl p-4 space-y-2"
+                  className="absolute right-0 mt-3 w-64 bg-white rounded-2xl shadow-2xl 
+                 border border-gray-200 overflow-hidden z-50"
                 >
-                  <p className="font-semibold">{user.name}</p>
-                  <p className="text-sm text-gray-600">{user.email}</p>
-                  <button
-                    onClick={handleLogout}
-                    className="w-full text-left text-red-500 hover:underline"
+                  <div
+                    className="p-4 bg-gradient-to-r from-yellow-100 to-yellow-200 border-b 
+                      flex items-start justify-between"
                   >
-                    Logout
-                  </button>
+                    <div>
+                      <h2 className="text-lg font-bold text-gray-800">
+                        {user.name}
+                      </h2>
+                      <p className="text-sm text-gray-600">{user.email}</p>
+                    </div>
+                    <button
+                      onClick={() => setProfileDropdown(false)}
+                      className="text-gray-500 hover:text-gray-800 transition-colors duration-200"
+                    >
+                      ✖
+                    </button>
+                  </div>
+
+                  {/* Actions */}
+                  <div className="p-4 flex flex-col space-y-3">
+                    <button
+                      onClick={handleLogout}
+                      className="w-full px-4 py-2 bg-gradient-to-r from-red-500 to-red-600 
+                     text-white font-semibold rounded-lg shadow-md 
+                     hover:from-red-600 hover:to-red-700 
+                     transition-all duration-200 flex items-center justify-center gap-2"
+                    >
+                      🚪 Logout
+                    </button>
+                    <button
+                      onClick={() => navigate("/profile")}
+                      className="w-full px-4 py-2 bg-gray-100 text-gray-800 font-medium 
+                     rounded-lg shadow-sm hover:bg-gray-200 
+                     transition-all duration-200 flex items-center justify-center gap-2"
+                    >
+                      👤 View Profile
+                    </button>
+                  </div>
                 </motion.div>
               )}
             </div>
