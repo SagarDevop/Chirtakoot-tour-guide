@@ -111,7 +111,7 @@ export default function Navbar() {
                   {link.icon}
                 </span>
                 {link.name}
-                <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#414A37] group-hover:w-full transition-all duration-300" />
+                <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300" />
               </Link>
             </motion.div>
           ))}

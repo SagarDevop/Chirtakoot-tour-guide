@@ -29,7 +29,6 @@ const SpotCard = ({ name, image, description, category }) => {
     );
   }, []);
 
-  // ✅ Fixed navigate
   const handleClick = () => {
     navigate(`/tourist-spot/${encodeURIComponent(name)}`, {
       state: { name, description, category, image },
