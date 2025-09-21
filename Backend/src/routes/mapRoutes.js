@@ -1,4 +1,4 @@
-import { geocode, direction } from "../controllers/map.controller";
+import { geocode, direction } from "../controllers/map.controller.js";
 
 const router = express.Router();
 
