@@ -3,8 +3,8 @@ import express from 'express'
 
 const router = express.Router();
 
-router.post('/geocode', geocode);
-router.post('/direction', direction);
+router.get('/geocode', geocode);
+router.get('/direction', direction);
 
 
 export default router;
