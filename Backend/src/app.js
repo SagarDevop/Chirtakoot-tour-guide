@@ -1,5 +1,6 @@
 import express from 'express';
 import authRoutes from './routes/authRoutes.js'
+import mapRoutes from './routes/mapRoutes.js'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 
@@ -23,7 +24,9 @@ app.use(cors({
 }));
 app.use(express.json());
 app.use(cookieParser())
+app.use(express.static(path.join(__dirname, 'client/build')));
 app.use('/api', authRoutes);
+app.use('/map',mapRoutes);
 //for testing that the server is running
 app.get('/', (req, res) => {
     res.send('API is running...');
