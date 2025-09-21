@@ -66,101 +66,85 @@ const SpotDetails = () => {
     );
   }
 
-  return (
-    <div className="min-h-screen overflow-hidden bg-gradient-to-br from-[#0f2027] via-[#447921] to-[#133d28] text-white relative px-4 py-24 sm:px-10">
-      {/* Floating blurred blobs */}
-      <div className="absolute top-[-10%] left-[-10%] w-[300px] h-[300px] bg-lime-400 rounded-full filter blur-3xl opacity-30 animate-pulse z-0"></div>
-      <div className="absolute bottom-[-10%] right-[-10%] w-[300px] h-[300px] bg-lime-400 rounded-full filter blur-3xl opacity-20 animate-pulse z-0"></div>
+ return (
+  
 
-      <motion.h1
-        className="relative z-10 text-4xl sm:text-5xl font-extrabold text-center text-green-950 mb-14"
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <Typewriter
-          options={{
-            strings: [
-              `${spot.name}`,
-              "Explore the Hidden Beauty",
-              "Discover More Below",
-            ],
-            autoStart: true,
-            loop: true,
-            delay: 50,
-            deleteSpeed: 30,
-          }}
-        />
-      </motion.h1>
 
-      {/* Scrollable Image Gallery */}
-      <div
-        ref={scrollRef}
-        className="relative z-10 flex gap-6 overflow-x-auto no-scrollbar mb-12"
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
-        onTouchStart={() => setIsPaused(true)}
-        onTouchEnd={() => setIsPaused(false)}
-      >
-        {images.map((img, idx) => (
-          <motion.img
-            key={idx}
-            src={img}
-            alt={`Image ${idx + 1}`}
-            className="min-w-[85%] sm:min-w-[70%] md:min-w-[60%] lg:min-w-[50%] h-[60vh] object-cover rounded-2xl shadow-2xl transition-transform duration-500 hover:scale-105"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: idx * 0.1 }}
-          />
-        ))}
-      </div>
+  <div className="min-h-screen bg-[#EAD7B7] text-gray-900 p-4 mt-20 text-center">
+    {/* Spot ka Naam */}
+    <h1 className="text-5xl md:text-6xl font-extrabold text-gray-500 text-center mb-6 
+               drop-shadow-2xl">{spot.name}</h1>
+   {/* Images horizontal scroll, scroller hidden */}
+<div
+  className="flex overflow-x-auto space-x-4 mb-6 scrollbar-hide"
+  style={{
+    scrollbarWidth: "none", // Firefox
+    msOverflowStyle: "none" // IE 10+
+  }}
+>
+  {images.map((img, index) => (
+    <img
+      key={index}
+      src={img}
+      alt={`${spot.name} ${index}`}
+      className="w-full max-w-md flex-shrink-0 rounded-lg object-cover"
+      style={{ scrollSnapAlign: "start" }} // optional for smooth snap
+      
+    />
+  ))}
+</div>
+<div
+  ref={scrollRef}
+  className="flex overflow-x-auto space-x-4 mb-6"
+  style={{
+    scrollbarWidth: "none", // Firefox
+    msOverflowStyle: "none" // IE 10+
+  }}
+  >
 
-      {/* Description Card */}
-      <motion.div
-        className="relative z-10 max-w-4xl mx-auto glassmorphism p-6 sm:p-10 mb-12 text-lg text-white rounded-2xl shadow-lg"
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="text-lg leading-relaxed mb-6 text-white font-semibold text-center">
-          <Typewriter
-            options={{
-              strings: [
-                `${spot.description}`,
-                `${spot.fullDescription}`,
-                `Best Time to Visit: ${spot.besttime}`,
-                ` Highlights: ${spot.Highlights}`,
-                ` Tips: ${spot.Tips}`,
-                
-              ],
-              loop: true,
-              autoStart: true,
-              delay: 25,
-              deleteSpeed: 0,
-              pauseFor: 4000,
-            }}
-          />
-        </div>
-      </motion.div>
 
-      {/* Map Button */}
-      <motion.div
-        className="text-center relative z-10"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.8 }}
-      >
-        <a
-          href={spot.mapLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-full shadow-lg transition-all duration-300"
-        >
-          🌍 View on Map
-        </a>
-      </motion.div>
     </div>
-  );
+
+   <div className=""></div>
+  <div className="bg-amber-100 p-8 rounded-lg shadow-md w-full max-w-7xl mx-auto h-[100vh] flex relative flex-col gap-12">
+    
+    <div className="w-full flex gap-4">
+
+  {/*  Best Time Box */}
+  <div className="flex-1 bg-rose-100 p-4 rounded-xl shadow-md border border-gray-200">
+    <h3 className="text-base font-semibold text-gray-800 mb-2">Best Time</h3>
+    <p className="text-sm text-gray-700">{spot.besttime}</p>
+  </div>
+
+  {/*  Tips & Highlights Box */}
+  <div className="flex-1 bg-rose-100 p-4 rounded-xl shadow-md border border-gray-200">
+    <h3 className="text-base font-semibold text-gray-800 mb-2">Tips </h3>
+    <p className="text-sm text-gray-700">{spot.Tips}</p>
+        <h3 className="text-base font-semibold text-gray-800 mb-2">Highlights </h3>
+
+    <p className="text-sm text-gray-700">{spot.Highlights}</p>
+  </div>
+   
+</div>
+
+    {/* Description */}
+   <div className="w-full bg-[#EFE6DD] p-4 rounded-lg shadow text-gray-800 text-lg ">
+     <h2 className="text-base font-semibold text-gray-800 mb-4">संक्षिप्त वर्णन</h2>
+
+    {spot.description}
+  </div>
+
+   {/* Full Description */}
+  <div className="w-full bg-[#EFE6DD] p-4 rounded-lg shadow text-gray-700  h-[50vh] ">
+   <h2 className="text-base font-semibold text-gray-800 mb-4"> रामघाट का इतिहास और धार्मिक महत्व</h2>
+
+    {spot.fullDescription}{spot.Highlights}
+  </div>
+  
+</div>
+</div>
+);
+
 };
 
 export default SpotDetails;

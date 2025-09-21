@@ -68,3 +68,7 @@ const SpotCard = ({ name, image, description, mapLink, category }) => {
 };
 
 export default SpotCard;
+
+
+
+
