@@ -1,61 +1,84 @@
 import React, { useState } from "react";
-import { MapContainer, TileLayer, Polyline, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Polyline, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+
+// Component to fit map bounds
+function FitBounds({ coords }) {
+  const map = useMap();
+  if (coords && coords.length > 0) {
+    map.fitBounds(coords);
+  }
+  return null;
+}
 
 function RickshawTour() {
   const [from, setFrom] = useState("");
   const [to, setTo] = useState("");
   const [route, setRoute] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  // Get coordinates from backend
+// Calculate distance in km
+function haversineDistance([lat1, lon1], [lat2, lon2]) {
+  const toRad = (deg) => (deg * Math.PI) / 180;
+  const R = 6371; // Radius of the Earth in km
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
+}
+
+
   const getCoordinates = async (place) => {
-    const res = await fetch(`https://chitrakoot-yatra.onrender.com/map/geocode?text=${encodeURIComponent(place)}`);
+    const res = await fetch(
+      `https://chitrakoot-yatra.onrender.com/map/geocode?text=${encodeURIComponent(place)}`
+    );
     if (!res.ok) throw new Error("Failed to get coordinates");
     const data = await res.json();
-    return data.features[0]?.geometry.coordinates; // [lon, lat]
+    const coords = data.features?.[0]?.geometry?.coordinates;
+    console.log(coords)
+    if (!coords) throw new Error(`Could not find location: ${place}`);
+    return coords;
   };
 
   const handleSearch = async () => {
-    if (!from || !to) return alert("Enter both locations");
-    setLoading(true);
+  if (!from || !to) return alert("Enter both locations");
+  setLoading(true);
 
-    try {
-      const fromCoords = await getCoordinates(from);
-      const toCoords = await getCoordinates(to);
+  try {
+    const fromCoordsRaw = await getCoordinates(from); // [lon, lat]
+    const toCoordsRaw = await getCoordinates(to);     // [lon, lat]
 
-      if (!fromCoords || !toCoords) {
-        alert("Could not find one of the locations");
-        setLoading(false);
-        return;
-      }
-
-      // Directions API via backend
-      const res = await fetch(
-        `https://chitrakoot-yatra.onrender.com/map/directions?start=${fromCoords.join(",")}&end=${toCoords.join(",")}`
-      );
-
-      if (!res.ok) throw new Error("Failed to fetch route");
-      const data = await res.json();
-
-      const distanceKm = (data.routes[0].summary.distance / 1000).toFixed(2);
-      const durationMin = Math.ceil(data.routes[0].summary.duration / 60);
-      const coords = data.routes[0].geometry.coordinates.map((c) => [c[1], c[0]]);
-
-      setRoute({
-        fromCoords: [fromCoords[1], fromCoords[0]],
-        toCoords: [toCoords[1], toCoords[0]],
-        coords,
-        distance: distanceKm,
-        duration: durationMin,
-      });
-    } catch (err) {
-      console.error(err);
-      alert(err.message);
-    } finally {
+    if (!fromCoordsRaw || !toCoordsRaw) {
+      alert("Could not find one of the locations");
       setLoading(false);
+      return;
     }
-  };
+
+    // Convert to [lat, lon] for Haversine
+    const fromCoords = [fromCoordsRaw[1], fromCoordsRaw[0]];
+    const toCoords = [toCoordsRaw[1], toCoordsRaw[0]];
+
+    // Calculate straight-line distance
+    const distance = haversineDistance(fromCoords, toCoords).toFixed(2);
+
+    setRoute({
+      fromCoords,
+      toCoords,
+      coords: [fromCoords, toCoords], // straight line
+      distance,
+      duration: Math.ceil(distance / 15 * 60), // approx: assume rickshaw 15 km/h
+    });
+  } catch (err) {
+    console.error(err);
+    alert(err.message);
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <div className="min-h-screen bg-[#DBC2A6] flex flex-col items-center justify-center p-6">
@@ -83,6 +106,7 @@ function RickshawTour() {
         >
           {loading ? "Searching..." : "Find Rickshaw"}
         </button>
+        {error && <p className="mt-2 text-red-600">{error}</p>}
       </div>
 
       {route && (
@@ -111,6 +135,7 @@ function RickshawTour() {
               <Popup>Destination: {to}</Popup>
             </Marker>
             <Polyline positions={route.coords} color="blue" />
+            <FitBounds coords={[route.fromCoords, route.toCoords]} />
           </MapContainer>
         </div>
       )}
