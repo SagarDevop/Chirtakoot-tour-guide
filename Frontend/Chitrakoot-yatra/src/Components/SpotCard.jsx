@@ -52,7 +52,7 @@ const SpotCard = ({ name, image, description, mapLink, category }) => {
           <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">
             {category}
           </span>
-          <button onClick={handleClick} className='text-xs bg-green-900 text-white  px-2 py-1 rounded-md'>more..</button>
+          <button onClick={handleClick} className='text-xs bg-green-900 text-white  px-2 py-1 rounded-md'>more...</button>
           <a
             href={mapLink}
             target="_blank"
@@ -61,6 +61,8 @@ const SpotCard = ({ name, image, description, mapLink, category }) => {
           >
             📍 Show on Map
           </a>
+
+
         </div>
       </div>
     </div>
