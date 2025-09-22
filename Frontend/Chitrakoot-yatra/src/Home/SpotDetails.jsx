@@ -17,6 +17,10 @@ const SpotDetails = () => {
 
   const images = spot?.images?.length ? spot.images : [spot?.image];
 
+ function mapLink(){
+  
+ }
+
   useEffect(() => {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer || images.length <= 1) return;
@@ -72,7 +76,7 @@ const SpotDetails = () => {
 
   <div className="min-h-screen bg-[#EAD7B7] text-gray-900 p-4 mt-20 text-center">
     {/* Spot ka Naam */}
-    <h1 className="text-5xl md:text-6xl font-extrabold text-gray-500 text-center mb-6 
+    <h1 className="text-5xl md:text-6xl font-extrabold text-gray-500 text-center mb-8
                drop-shadow-2xl">{spot.name}</h1>
    {/* Images horizontal scroll, scroller hidden */}
 <div
@@ -87,7 +91,7 @@ const SpotDetails = () => {
       key={index}
       src={img}
       alt={`${spot.name} ${index}`}
-      className="w-full max-w-md flex-shrink-0 rounded-lg object-cover"
+      className="w-[25vw] h-[50vh] max-w-md flex-shrink-0 rounded-lg object-cover"
       style={{ scrollSnapAlign: "start" }} // optional for smooth snap
       
     />
@@ -120,8 +124,10 @@ const SpotDetails = () => {
   <div className="flex-1 bg-rose-100 p-4 rounded-xl shadow-md border border-gray-200">
     <h3 className="text-base font-semibold text-gray-800 mb-2">Tips </h3>
     <p className="text-sm text-gray-700">{spot.Tips}</p>
-        <h3 className="text-base font-semibold text-gray-800 mb-2">Highlights </h3>
-
+  </div>
+   
+   <div className="flex-1 bg-rose-100 p-4 rounded-xl shadow-md border border-gray-200">
+    <h3 className="text-base font-semibold text-gray-800 mb-2">Highlights </h3>
     <p className="text-sm text-gray-700">{spot.Highlights}</p>
   </div>
    
@@ -136,9 +142,14 @@ const SpotDetails = () => {
 
    {/* Full Description */}
   <div className="w-full bg-[#EFE6DD] p-4 rounded-lg shadow text-gray-700  h-[50vh] ">
-   <h2 className="text-base font-semibold text-gray-800 mb-4"> रामघाट का इतिहास और धार्मिक महत्व</h2>
+   <h2 className="text-base font-semibold text-gray-800 mb-4"> {spot.name} का इतिहास और धार्मिक महत्व</h2>
 
-    {spot.fullDescription}{spot.Highlights}
+    {spot.fullDescription}
+    <div className="mt-10"><button className="bg-green-900 text-white py-2 px-4 rounded-md"><a href={spot.mapLink}>MapLINK</a></button></div>
+
+    
+    
+    
   </div>
   
 </div>
