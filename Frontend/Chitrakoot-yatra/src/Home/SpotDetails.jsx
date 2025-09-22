@@ -17,6 +17,10 @@ const SpotDetails = () => {
 
   const images = spot?.images?.length ? spot.images : [spot?.image];
 
+ function mapLink(){
+  
+ }
+
   useEffect(() => {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer || images.length <= 1) return;
@@ -140,7 +144,12 @@ const SpotDetails = () => {
   <div className="w-full bg-[#EFE6DD] p-4 rounded-lg shadow text-gray-700  h-[50vh] ">
    <h2 className="text-base font-semibold text-gray-800 mb-4"> {spot.name} का इतिहास और धार्मिक महत्व</h2>
 
-    {spot.fullDescription}{spot.Highlights}
+    {spot.fullDescription}
+    <div className="mt-10"><button className="bg-green-900 text-white py-2 px-4 rounded-md"><a href={spot.mapLink}>MapLINK</a></button></div>
+
+    
+    
+    
   </div>
   
 </div>
