@@ -1,433 +1,464 @@
 const Spot = [
-  {
-    name: "रामघाट",
-    image:
-      "https://media.gettyimages.com/id/1223014100/photo/chitrakoot-life-at-the-ghats.jpg?s=612x612&w=0&k=20&c=YITNezxRqlh0RSLmnOFLVefONBExEU4X84DVCBwKqVg=",
-    images: [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/65/b3/b1/caption.jpg?w=1200&h=-1&s=1",
-      "https://s7ap1.scene7.com/is/image/incredibleindia/ram-ghat-chitrakoot-madhya-pradesh-1-attr-hero?qlt=82&ts=1742999504563",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2-mrg9S_uSnUK9YRHnGwBu0DgqCQ0FwZvkg&s",
-      "https://thumbs.dreamstime.com/b/december-chitrakoot-india-boats-banks-mandakini-river-ram-ghat-chitrkoot-parked-mandakani-inida-192377598.jpg",
-    ],
-    description:
-      "रामघाट चित्रकूट का सबसे पवित्र घाट है जो मंदाकिनी नदी के किनारे स्थित है। यहाँ प्रभु श्रीराम, माता सीता और लक्ष्मण जी ने वनवास काल में निवास और स्नान किया था। यह स्थान अपनी शाम की गंगा आरती, नौकायन और आध्यात्मिक वातावरण के लिए प्रसिद्ध है, जहाँ दूर-दूर से श्रद्धालु दर्शन करने आते हैं।",
-    fullDescription:
-      "रामघाट चित्रकूट का हृदय माना जाता है। यह मंदाकिनी नदी के किनारे स्थित वह पावन स्थल है जहाँ त्रेतायुग में भगवान श्रीराम, माता सीता और लक्ष्मण ने अपने वनवास काल के कई वर्ष व्यतीत किए थे। मान्यता है कि यहीं पर भगवान राम ने ऋषियों के साथ संवाद किया, साधुओं का सत्संग हुआ और भक्तों को धर्म के मार्ग पर चलने की प्रेरणा मिली। मंदाकिनी नदी का जल यहाँ अत्यंत शीतल और पवित्र माना जाता है। श्रद्धालु यहाँ स्नान कर स्वयं को पापमुक्त मानते हैं। इस स्थान की विशेष पहचान यहाँ की संध्या आरती है, जब सैकड़ों दीप जलाकर भक्त नदी के तट पर गाते-बजाते आरती करते हैं। उस समय का दृश्य अद्भुत और आत्मिक शांति प्रदान करने वाला होता है।\n\nरामघाट पर हर समय चहल-पहल बनी रहती है। दिन में यहाँ साधु-संत ध्यान करते दिखाई देते हैं, बच्चे नदी में स्नान करते हैं और लोग नौकायन का आनंद उठाते हैं। शाम होते ही यहाँ वातावरण पूरी तरह बदल जाता है। घंटियों की मधुर ध्वनि, शंखनाद, मंत्रोच्चारण और भक्ति गीत वातावरण को आध्यात्मिक बना देते हैं। यह दृश्य हर श्रद्धालु के लिए अविस्मरणीय होता है।\n\nइतिहासकारों और धार्मिक ग्रंथों में रामघाट का वर्णन अनेक बार मिलता है। तुलसीदास जी ने भी यहीं पर रहकर ‘रामचरितमानस’ की रचना आरंभ की थी। कहा जाता है कि मंदाकिनी के तट पर बैठकर उन्होंने प्रभु राम के भक्ति भाव से ओतप्रोत पदों की रचना की। आज भी यहाँ तुलसी घाट नामक स्थान है, जहाँ तुलसीदास जी की स्मृति जीवंत है।\n\nरामघाट धार्मिक दृष्टि से ही नहीं, प्राकृतिक सौंदर्य की दृष्टि से भी अत्यंत मनमोहक है। मंदाकिनी नदी का शांत प्रवाह, उसके किनारे बने घाट, और बीच-बीच में दिखने वाली नावें पूरे दृश्य को और भी सुंदर बना देती हैं। सुबह सूर्योदय और शाम का सूर्यास्त यहाँ देखने योग्य होता है। सुबह की ताजी हवा और पक्षियों का कलरव यहाँ आने वाले हर व्यक्ति के मन को प्रसन्न कर देता है।\n\nत्योहारों और विशेष अवसरों पर यहाँ का नजारा और भी अलौकिक हो जाता है। कार्तिक पूर्णिमा, राम नवमी और दीवाली जैसे अवसरों पर रामघाट दीपों से जगमगा उठता है। हज़ारों श्रद्धालु एक साथ आरती में सम्मिलित होते हैं, जिससे वातावरण दिव्य हो जाता है। इसके अलावा स्थानीय मेले, साधु-संतों के प्रवचन और भजन मंडलियाँ भी यहाँ समय-समय पर आयोजित होते हैं।\n\nरामघाट केवल पूजा-पाठ और धार्मिक कर्मकांड का केंद्र ही नहीं है, बल्कि यह समाज के लिए मिलन स्थल भी है। यहाँ दूर-दराज़ से आए यात्री, श्रद्धालु और पर्यटक मिलते-जुलते हैं। उनकी आपसी बातचीत से सांस्कृतिक आदान-प्रदान होता है। यह स्थान भारतीय संस्कृति, अध्यात्म और परंपरा का जीवंत उदाहरण है।\n\nयदि कोई चित्रकूट आता है और रामघाट नहीं जाता, तो उसकी यात्रा अधूरी मानी जाती है। यह स्थान न केवल धार्मिक आस्था को मजबूत करता है, बल्कि मन को शांति, सुकून और आध्यात्मिक आनंद भी प्रदान करता है। जो भी यहाँ आता है, वह अपने जीवन में एक विशेष ऊर्जा और सकारात्मकता लेकर जाता है।\n\nयात्रियों के लिए सुझाव है कि यहाँ सूर्यास्त से पहले पहुँचे, ताकि संध्या आरती का अद्भुत अनुभव ले सकें। साथ ही, साधारण और मर्यादित वस्त्र पहनें और स्थानीय परंपराओं का सम्मान करें। यदि संभव हो तो नाव की सैर अवश्य करें, क्योंकि मंदाकिनी की लहरों पर बैठकर रामघाट का दृश्य और भी अनुपम प्रतीत होता है।\n\nसंक्षेप में, रामघाट एक ऐसा स्थल है जहाँ धर्म, आस्था, संस्कृति और प्रकृति का अद्भुत संगम होता है। यह स्थान न केवल चित्रकूट बल्कि सम्पूर्ण भारत की आध्यात्मिक धरोहर है, जो आने वाले हर यात्री को जीवनभर की यादें और अनुभव देता है।",
-  },
+ {
+  "name": "श्री कामतानाथ मंदिर",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMt6GxmF4OdHFKJQb5f4rRdZsCJrUOorVh2w&s",
+  "images": [
+    "https://thetempleguru.com/wp-content/uploads/2023/09/Kamadgiri-temple-Chitrakoot.jpg",
+    "https://cdn1.prayagsamagam.com/media/2023/05/06140941/Shri-Kamnath-Temple-Chitrakoot-1-1024x576.webp",
+    "https://www.jagranimages.com/images/newimg/08062020/08_06_2020-kamtanath_in_chitrakoot_20365514_102522916.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtWsbr1XR5cz-G9G6gUgOuZ1zYBiQRoPbsuQ&s",
+    "https://kamadgiritrustchitrakoot.org/Content/images/Gallery/1g0tiplh.bdoshri%20kamtanath%20ji.jpg"
+  ],
+  "description": "कामतानाथ मंदिर एक प्राचीन और पवित्र स्थल है जहाँ भक्त भगवान शिव की पूजा करते हैं। यह मंदिर आध्यात्मिक शांति और प्राकृतिक सौंदर्य के लिए प्रसिद्ध है।",
+  "fullDescription": "श्री कामतानाथ मंदिर उत्तर प्रदेश के चित्‍रकूट जिले में स्थित एक अत्यंत पवित्र शिव मंदिर है। यह मंदिर पहाड़ी क्षेत्र में स्थित है और प्राकृतिक सौंदर्य से घिरा हुआ है। यहाँ हर साल हजारों भक्त भगवान शिव की आराधना करने आते हैं। मंदिर की वास्तुकला पारंपरिक शैली में बनी है और इसकी घंटियाँ तथा धार्मिक वातावरण श्रद्धालुओं को आध्यात्मिक अनुभव कराते हैं। विशेषकर सावन के महीने में मंदिर में भारी भीड़ होती है और भक्त व्रत, पूजा और जलाभिषेक करने के लिए आते हैं। मंदिर का वातावरण अत्यंत शांत और ध्यान केंद्रित करने योग्य है, जिससे आने वाले पर्यटक और भक्त आंतरिक शांति अनुभव कर सकते हैं। आसपास की हरियाली, पहाड़ और नदी का नज़ारा इसे और भी रमणीय बनाता है। यहाँ की यात्रा न केवल धार्मिक अनुभव देती है बल्कि प्राकृतिक सुंदरता का आनंद भी प्रदान करती है। स्थानीय लोग और पुजारी मंदिर की परंपराओं और पूजा पद्धतियों को जीवित रखते हैं। यह स्थल ध्यान, साधना और आध्यात्मिक चिंतन के लिए आदर्श है।",
+  "mapLink": "https://maps.google.com/?q=Shri+Kamtanath+Mandir",
+  "category": "Spiritual",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद रहता है।",
+  "Highlights": "शिव मंदिर, प्राकृतिक सौंदर्य, आध्यात्मिक शांति, पहाड़ी वातावरण।",
+  "Tips": "मंदिर में जलाभिषेक और ध्यान करें; आसपास की हरियाली का आनंद लें।"
+},
 
   {
-    name: "गुप्त गोदावरी",
-    image:
-      "https://www.shutterstock.com/shutterstock/photos/1432428308/display_1500/stock-photo-chitrakoot-madhya-pradesh-india-january-gupt-godavari-chitrakoot-madhya-pradesh-1432428308.jpg",
-    images: [
-      "https://www.shutterstock.com/shutterstock/photos/1432428308/display_1500/stock-photo-chitrakoot-madhya-pradesh-india-january-gupt-godavari-chitrakoot-madhya-pradesh-1432428308.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Gupt_Godavari.jpg/800px-Gupt_Godavari.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/47/Gupt_Godavari_cave.jpg",
-    ],
-    description: "A mysterious cave with flowing water inside.",
-    fullDescription:
-      "Gupt Godavari is a cave shrine believed to have been the courtroom of Lord Ram and Lakshman during their exile. Water flows through the caves, adding to the mystical aura. Devotees walk barefoot through water to reach the inner sanctum.",
-    mapLink: "https://maps.google.com/?q=Gupt+Godavari+Chitrakoot",
-    category: "Mystical",
-    besttime:
-      "November to February when the cave is accessible and weather is cool.",
-    Highlights:
-      "Mystical water caves, sacred atmosphere, and pilgrimage walk through water.",
-    Tips: "Wear comfortable shoes that can get wet. Be cautious while walking on slippery stones.",
+  "name": "कामदगिरि पर्वत",
+  "image": "https://www.tirthayatra.org/wp-content/uploads/2023/04/EmTKADQU0AAhLqm.jpg",
+  "images": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMXzcMcWAVU8EO33hBFTe1HTV1x1gj-fksJw&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs5fgAPMDTF2BerI9-cdzKRm_hzSNIc1sSUQ&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnS5rImGZ_bU8__XvnjVB2feZKSWlL8RXQA&s",
+    "https://tripcosmos.co/wp-content/uploads/2023/04/Kamad-Giri-chitrakoot-1024x780.jpg.webp",
+    "https://optimatravels.com/images/chitrakoot-images/kamadgiri-chitrakoot-head.jpg"
+  ],
+  "description": "कामदगिरि पर्वत चित्‍रकूट का पवित्र और हरे-भरे जंगलों वाला स्थल है। यह पर्वत धार्मिक अनुष्ठानों, मंदिरों और भक्तों के लिए प्रसिद्ध है। यहां परिक्रमा करना श्रद्धालुओं के लिए विशेष महत्व रखता है।",
+  "fullDescription": "कामदगिरि पर्वत, जिसका अर्थ 'इच्छा पूरी करने वाला पर्वत' है, चित्‍रकूट का दिल माना जाता है। यह हरे-भरे जंगलों वाला पर्वत धार्मिक दृष्टि से अत्यंत महत्वपूर्ण है। यहां स्थित कई मंदिर भगवान राम को समर्पित हैं। श्रद्धालु यहां परिक्रमा (पर्यटन और पूजा) करते हैं, जिसे पवित्र और शुभ माना जाता है। जंगलों की घनी हरियाली, प्राकृतिक नदियाँ और पर्वतीय दृश्य यात्रियों को मनमोहक अनुभव प्रदान करते हैं। यहां की परिक्रमा करने की प्रक्रिया आध्यात्मिक शांति और ध्यान का अवसर देती है। यात्रा करते समय आरामदायक जूते पहनना, पानी साथ रखना और सुबह जल्दी निकलना उचित रहता है ताकि दोपहर की गर्मी से बचा जा सके। कामदगिरि पर्वत न केवल धार्मिक दृष्टि से महत्वपूर्ण है बल्कि प्राकृतिक सुंदरता और शांत वातावरण के लिए भी प्रसिद्ध है। यहाँ का अनुभव श्रद्धालुओं और पर्यटकों दोनों के लिए यादगार रहता है।",
+  "mapLink": "https://maps.google.com/?q=Kamadgiri+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "सितंबर से मार्च, जब मौसम ट्रैकिंग और यात्रा के लिए सबसे अच्छा होता है।",
+  "Highlights": "पवित्र जंगल की परिक्रमा, भगवान राम के मंदिर, मनोहारी पर्वतीय दृश्य, प्राकृतिक सुंदरता।",
+  "Tips": "आरामदायक जूते पहनें, पानी साथ रखें, सुबह जल्दी यात्रा शुरू करें।"
+},
+
+  {
+  "name": "रामघाट",
+  "image": "https://media.gettyimages.com/id/1223014100/photo/chitrakoot-life-at-the-ghats.jpg?s=612x612&w=0&k=20&c=YITNezxRqlh0RSLmnOFLVefONBExEU4X84DVCBwKqVg=",
+  "images": [
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/65/b3/b1/caption.jpg?w=1200&h=-1&s=1",
+    "https://s7ap1.scene7.com/is/image/incredibleindia/ram-ghat-chitrakoot-madhya-pradesh-1-attr-hero?qlt=82&ts=1742999504563",
+    "https://s7ap1.scene7.com/is/image/incredibleindia/ram-ghat-chitrakoot-madhya-pradesh-2-attr-hero?qlt=82&ts=1742999504563",
+    "https://thumbs.dreamstime.com/b/december-chitrakoot-india-boats-banks-mandakini-river-ram-ghat-chitrkoot-parked-mandakani-inida-192377598.jpg",
+    "https://cdn-iefih.nitrocdn.com/rdrKwvjowWkFerxYJkmTlsEpOYvgNPuc/assets/images/optimized/rev-ccc4f4f/thechitrakoot.com/wp-content/uploads/2020/07/Ramghat-filter-1920.jpg"
+  ],
+  "description": "रामघाट चित्रकूट का पवित्र घाट है, जो मंदाकिनी नदी के किनारे स्थित है। यहाँ भगवान राम, माता सीता और लक्ष्मण ने वनवास काल बिताया। संध्या आरती, नौकायन और आध्यात्मिक वातावरण के लिए यह स्थल अत्यंत प्रसिद्ध है।",
+  "fullDescription": "रामघाट चित्रकूट का सबसे पवित्र और प्रसिद्ध घाट है, जो मंदाकिनी नदी के किनारे स्थित है। माना जाता है कि त्रेतायुग में भगवान राम, माता सीता और लक्ष्मण जी ने यहाँ कई वर्ष वनवास व्यतीत किए। घाट का धार्मिक महत्व अत्यंत उच्च है और श्रद्धालु यहाँ स्नान कर पापमोक्ष की कामना करते हैं। संध्या समय पर होने वाली गंगा आरती यहाँ की प्रमुख आकर्षण है, जिसमें दीपों की रोशनी और मंत्रोच्चारण वातावरण को दिव्य बना देते हैं। घाट के किनारे नौकाओं में बैठकर नदी की यात्रा करना, मंदिर दर्शन करना और प्राकृतिक सुंदरता का आनंद लेना अनुभव को और भी यादगार बनाता है। रामघाट न केवल आध्यात्मिक अनुभव का केंद्र है, बल्कि यह संस्कृति और समाज के मिलन स्थल के रूप में भी जाना जाता है। यहाँ हर समय साधु-संत ध्यान करते हैं, बच्चे और श्रद्धालु स्नान करते हैं और त्योहारों के समय पूरा घाट दीपों से जगमगा उठता है। विशेष अवसरों पर भजन, प्रवचन और मेले यहाँ की धार्मिक एवं सांस्कृतिक धरोहर को जीवित रखते हैं। रामघाट में आने वाले लोग आत्मिक शांति, सकारात्मक ऊर्जा और अद्भुत प्राकृतिक दृश्य दोनों का अनुभव प्राप्त करते हैं। यात्रा के लिए सुझाव है कि संध्या आरती से पहले पहुँचे, आरामदायक वस्त्र पहनें और स्थानीय परंपराओं का सम्मान करें।",
+  "mapLink": "https://maps.google.com/?q=Ramghat+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "सितंबर से मार्च, जब मौसम सुखद होता है और गंगा आरती तथा दर्शन के लिए आदर्श समय होता है।",
+  "Highlights": "संध्या गंगा आरती, नौकायन, आसपास के मंदिर, सांस्कृतिक वातावरण।",
+  "Tips": "संध्या आरती से पहले पहुँचें ताकि दीपों और मंत्रों का दिव्य अनुभव ले सकें। आरामदायक कपड़े पहनें और स्थानीय परंपराओं का सम्मान करें।"
+},
+  {
+  "name": "गुप्त गोदावरी",
+  "image": "https://www.shutterstock.com/shutterstock/photos/1432428308/display_1500/stock-photo-chitrakoot-madhya-pradesh-india-january-gupt-godavari-chitrakoot-madhya-pradesh-1432428308.jpg",
+  "images": [
+    "https://www.shutterstock.com/shutterstock/photos/1432428308/display_1500/stock-photo-chitrakoot-madhya-pradesh-india-january-gupt-godavari-chitrakoot-madhya-pradesh-1432428308.jpg",
+    "https://khabarlahariya.org/wp-content/uploads/2020/10/gupt-godavari-caves.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST_TV_Kqrf7rxCS05K0rQeMKAVuhgHYH6Q8Q&s",
+    "https://media-cdn.tripadvisor.com/media/photo-s/10/68/ab/4c/gupt-godavari-caves.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-RGentmH7_rGeJF0mwQT98ddDqhTsW_X41Q&s"
+  ],
+  "description": "गुप्त गोदावरी चित्‍रकूट की एक रहस्यमयी गुफा है, जहाँ पानी बहता है। कहा जाता है कि भगवान राम और लक्ष्मण ने वनवास में यहाँ न्यायालय किया था। श्रद्धालु गुफा में नंगे पैर चलकर आंतरिक मंदिर पहुँचते हैं।",
+  "fullDescription": "गुप्त गोदावरी चित्‍रकूट में स्थित एक रहस्यमयी और पवित्र गुफा है। मान्यता है कि त्रेतायुग में भगवान राम और लक्ष्मण ने अपने वनवास काल में इस गुफा में न्यायालय आयोजित किया था। गुफा के अंदर जल का प्रवाह इसे और भी रहस्यमयी और आध्यात्मिक बनाता है। श्रद्धालु यहाँ नंगे पैर पानी में चलकर आंतरिक मंदिर तक पहुँचते हैं। गुफा की दीवारों और अंदरूनी मार्ग में प्राकृतिक आकृतियाँ और पत्थरों का अद्भुत दृश्य मिलता है। यात्रा करते समय सतर्क रहना आवश्यक है क्योंकि पत्थर फिसलन वाले हो सकते हैं। यहाँ का वातावरण शांत, पवित्र और ध्यान केंद्रित करने योग्य है। नवंबर से फरवरी तक मौसम ठंडा और गुफा में यात्रा के लिए उपयुक्त होता है। गुप्त गोदावरी केवल धार्मिक महत्व ही नहीं रखती बल्कि प्राकृतिक सौंदर्य और रहस्यात्मक अनुभव भी देती है। यहाँ आने वाले श्रद्धालु आध्यात्मिक शांति का अनुभव करते हैं और मंदिर परिसर में ध्यान और प्रार्थना करते हैं। यात्रा के दौरान आरामदायक और गीले हो सकने वाले जूते पहनना और सुरक्षित तरीके से चलना आवश्यक है। गुप्त गोदावरी का अनुभव श्रद्धालुओं और पर्यटकों दोनों के लिए अविस्मरणीय रहता है।",
+  "mapLink": "https://maps.google.com/?q=Gupt+Godavari+Chitrakoot",
+  "category": "Mystical",
+  "besttime": "नवंबर से फरवरी, जब मौसम ठंडा और गुफा की यात्रा के लिए सुरक्षित होता है।",
+  "Highlights": "रहस्यमयी जल प्रवाहित गुफा, पवित्र वातावरण, नंगे पैर गुफा यात्रा।",
+  "Tips": "आरामदायक जूते पहनें जो गीले हो सकें। फिसलन वाले पत्थरों पर सावधानी से चलें।"
+},
+
+  
+  {
+  "name": "भरत कूप",
+  "image": "https://content.jdmagicbox.com/comp/chitrakoot-up/s9/9999p5198.5198.200627224325.c2s9/catalogue/bharatkoop-temple-chitrakoot-up-temples-4h0ednmnjB.jpg",
+  "images": [
+    "https://content.jdmagicbox.com/comp/chitrakoot-up/s9/9999p5198.5198.200627224325.c2s9/catalogue/bharatkoop-temple-chitrakoot-up-temples-4h0ednmnjB.jpg",
+    "https://media1.thrillophilia.com/filestore/7tdqzana93fcefl7120xkmyywzo7_bharat%20koop.jpg?w=400&dpr=2",
+    "https://images.news18.com/ibnkhabar/uploads/2023/07/3236833_HYP_0_FEATUREFB_IMG_1689910481755-16899177873x2.jpg",
+
+  ],
+  "description": "भरत कूप चित्‍रकूट का पवित्र कुआँ है जहाँ भरत ने विभिन्न तीर्थस्थलों से संकलित पवित्र जल संग्रहित किया था। यह स्थल धार्मिक और ऐतिहासिक दृष्टि से अत्यंत महत्वपूर्ण माना जाता है।",
+  "fullDescription": "भरत कूप चित्‍रकूट में स्थित एक प्राचीन और पवित्र कुआँ है। कहा जाता है कि भरत ने यहाँ विभिन्न तीर्थ स्थलों से लाए गए पवित्र जल को संचित किया था, ताकि वे भगवान राम के अनुपस्थित रहने पर उन्हें राजा के रूप में अभिषेक कर सकें। यह कुआँ धार्मिक और ऐतिहासिक दृष्टि से अत्यंत महत्वपूर्ण है और आज भी श्रद्धालु यहाँ पूजा-अर्चना और ध्यान करने आते हैं। कुआँ का परिसर शांत और प्राकृतिक सौंदर्य से भरा हुआ है, जो यात्रियों और भक्तों को आध्यात्मिक अनुभव प्रदान करता है। यहाँ का वातावरण अत्यंत पवित्र और मन को शांति देने वाला है। कुआँ की दीवारें और आसपास का परिसर ऐतिहासिक दृष्टि से भी महत्वपूर्ण है, जो प्राचीन कथाओं और परंपराओं को जीवित रखता है। सुबह के समय यहाँ आना विशेष रूप से सुंदर और शांत अनुभव देता है, क्योंकि प्रकाश और वातावरण दोनों मनोहारी होते हैं। यात्रा करते समय श्रद्धालु आरामदायक कपड़े पहनें और स्थल की पवित्रता का सम्मान करें। भरत कूप केवल धार्मिक महत्व ही नहीं रखता, बल्कि यह ऐतिहासिक घटनाओं और चित्‍रकूट की सांस्कृतिक धरोहर का जीवंत प्रतीक भी है।",
+  "mapLink": "https://maps.google.com/?q=Bharat+Koop+Chitrakoot",
+  "category": "Historical",
+  "besttime": "साल भर, विशेष रूप से नवंबर से फरवरी के बीच मौसम सुहावना और यात्रा के लिए अनुकूल होता है।",
+  "Highlights": "ऐतिहासिक कुआँ, धार्मिक महत्व, शांत वातावरण और प्राकृतिक सौंदर्य।",
+  "Tips": "सुबह जल्दी आएँ ताकि शांति का अनुभव हो और फोटो के लिए बेहतर रोशनी मिले।"
+},
+
+  {
+  "name": "हनुमान धारा",
+  "image": "https://visitplacesindia.com/wp-content/uploads/2024/11/hanuman-dhara.jpg",
+  "images": [
+    "https://visitplacesindia.com/wp-content/uploads/2024/11/hanuman-dhara.jpg",
+    "https://64.media.tumblr.com/2608d2fffaa64aa62beb1b7bcd222cf5/tumblr_pe9op77zlT1ru322to1_r1_1280.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStR4dpKn_poRgIJW1B5Qmpzx5fUpG2FOtJiQ&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpFQG0bO_toqqFFBZg5ghaQIPxHOZl_OuAEw&s",
+    "https://static.newstrack.com/h-upload/2024/06/06/1742157-whatsapp-image-2021-07-27-at-192241.webp"
+  ],
+  "description": "हनुमान धारा चित्रकूट की पहाड़ी पर स्थित एक पवित्र झरना और मंदिर है। कहा जाता है कि यह जल भगवान हनुमान को लंका दहन के बाद ठंडक देने के लिए आया था। स्थल धार्मिक और प्राकृतिक दृष्टि से प्रसिद्ध है।",
+  "fullDescription": "हनुमान धारा चित्रकूट में स्थित एक पवित्र मंदिर और झरना है, जो भगवान हनुमान को समर्पित है। किंवदंती अनुसार, जब हनुमान ने लंका दहन किया था, तब यह झरना उन्हें ठंडक देने के लिए प्रकट हुआ। यह स्थल पहाड़ी पर स्थित है और इसके लिए थोड़ी कठिन चढ़ाई करनी पड़ती है। चढ़ाई के दौरान यात्रियों को प्राकृतिक सुंदरता, हरियाली और चित्रकूट के मनोरम दृश्य देखने को मिलते हैं। मंदिर परिसर में भक्त ध्यान, पूजा और हनुमान चालीसा का पाठ करते हैं। झरने का पानी पवित्र माना जाता है और श्रद्धालु इसका सेवन कर आध्यात्मिक शांति अनुभव करते हैं। अक्टूबर से मार्च का समय यहाँ आने के लिए सबसे उपयुक्त है, क्योंकि मौसम सुहावना और ट्रेकिंग के लिए सुविधाजनक होता है। यात्रा के दौरान आरामदायक जूते पहनना, पर्याप्त पानी साथ रखना और सावधानीपूर्वक चढ़ाई करना आवश्यक है। हनुमान धारा न केवल धार्मिक महत्व रखता है बल्कि प्राकृतिक सौंदर्य और पर्वतीय अनुभव के लिए भी आदर्श स्थल है। यहाँ का वातावरण श्रद्धालुओं और पर्यटकों दोनों के लिए मनोहारी और स्मरणीय रहता है।",
+  "mapLink": "https://maps.google.com/?q=Hanuman+Dhara+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुहावना और ट्रेकिंग के लिए आरामदायक होता है।",
+  "Highlights": "पवित्र झरना, पहाड़ी दृश्य, मंदिर और शांतिपूर्ण वातावरण।",
+  "Tips": "चढ़ाई के लिए तैयार रहें; अच्छे जूते पहनें और पानी साथ रखें।"
+},
+
+{
+  "name": "जानकी कुंड",
+  "image": "https://cdn1.prayagsamagam.com/media/2023/05/12200021/Janki-kund-chitrakoot-2.webp",
+  "images": [
+    "https://cdn1.prayagsamagam.com/media/2023/05/12200021/Janki-kund-chitrakoot-2.webp",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVTtO1Rb53s1_B2vkSISavMI98qXh3WU167Q&s",
+    "https://cdn1.prayagsamagam.com/media/2023/05/12200024/Janki-kund-chitrakoot-4-1024x576.webp",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAuV5qRrlv_1YSRdK3ad6gDqDh_TFE7lgrbQ&s",
+    "https://www.40kmph.com/wp-content/uploads/2022/02/Sita-Charan-Chinh-Janki-Kund-Chitrakoot-Dham-Madhya-Pradesh.jpg"
+  ],
+  "description": "जानकी कुंड चित्रकूट का पवित्र ताल है जहाँ माता सीता ने वनवास के दौरान स्नान किया था। यह स्थल शांतिपूर्ण और ध्यान केंद्रित करने के लिए प्रसिद्ध है। श्रद्धालु यहाँ आध्यात्मिक शांति और मानसिक सुकून अनुभव करते हैं।",
+  "fullDescription": "जानकी कुंड चित्रकूट में स्थित एक पवित्र जलाशय है, जिसे माता सीता से जोड़ा जाता है। मान्यता है कि त्रेतायुग में माता सीता ने अपने वनवास के दौरान यहाँ स्नान किया था। कुंड का शांत और सौम्य वातावरण भक्तों और पर्यटकों को ध्यान और प्रार्थना के लिए प्रेरित करता है। ताल के किनारे बैठकर श्रद्धालु मन की शांति प्राप्त करते हैं और धार्मिक चिंतन कर सकते हैं। कुंड का पानी पवित्र माना जाता है और इसे देखने तथा आसपास के प्राकृतिक वातावरण का अनुभव लेने के लिए लोग दूर-दूर से आते हैं। नवंबर से फरवरी का समय यहाँ आने के लिए सबसे उपयुक्त है, क्योंकि मौसम ठंडा और आरामदायक होता है। जानकी कुंड केवल धार्मिक दृष्टि से ही महत्वपूर्ण नहीं है, बल्कि यह प्राकृतिक सौंदर्य और मानसिक शांति के लिए भी आदर्श स्थल है। यहाँ का अनुभव श्रद्धालुओं को आध्यात्मिक ऊर्जा, मानसिक शांति और स्मरणीय यादें प्रदान करता है। यात्रा के दौरान सुबह जल्दी पहुँचना और शांति का अनुभव करना सर्वोत्तम रहता है।",
+  "mapLink": "https://maps.google.com/?q=Janki+Kund+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "नवंबर से फरवरी, जब मौसम शांत और सुखद होता है।",
+  "Highlights": "शांत जलाशय, आध्यात्मिक वातावरण, ध्यान और चिंतन के स्थान।",
+  "Tips": "शांति और ध्यान के लिए सुबह जल्दी आएँ; भीड़ से बचें।"
+},
+
+  {
+  "name": "स्फटिक शिला",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUwVE7fFsWViRoMQATEm5-EkuLINbZRh9png&s",
+  "images": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUwVE7fFsWViRoMQATEm5-EkuLINbZRh9png&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsJO0F9CcbwOJSbb9K4X6BLtW2b7X0xxlPCg&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnq6qx8NkDN4H7ualor9ZmLWRbTudx7hkCng&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzb6uqmQvYFboOzS4hJWLAzQb0o3cGbvfATg&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLadXbVaZJC0E_ZxugV52idLRX4FfUx1TTElJeN2A85Jd2PHCzcxixEFnFP1F6OHSnhog&usqp=CAU"
+  ],
+  "description": "स्फटिक शिला चित्रकूट का पवित्र स्थल है जहाँ दो चमकदार पत्थरों को भगवान राम और माता सीता के बैठने की जगह माना जाता है। यह स्थल शांतिपूर्ण और प्राकृतिक सुंदरता से भरपूर है।",
+  "fullDescription": "स्फटिक शिला चित्रकूट में स्थित एक अनोखा और पवित्र स्थल है। यहाँ दो चमकदार पत्थर हैं जिन्हें भगवान राम और माता सीता के बैठने की जगह माना जाता है। यह स्थान घनी हरियाली और प्राकृतिक सौंदर्य से घिरा हुआ है, जो श्रद्धालुओं और पर्यटकों को आध्यात्मिक अनुभव प्रदान करता है। लोग यहाँ ध्यान, प्रार्थना और प्रकृति का आनंद लेने आते हैं। स्फटिक शिला का वातावरण अत्यंत शांत और मन को शांति देने वाला है। अक्टूबर से मार्च का समय यहाँ आने के लिए सबसे उपयुक्त है, क्योंकि मौसम साफ और सुहावना होता है। दिन के समय यहाँ आने से आप प्राकृतिक प्रकाश में पत्थरों की चमक और आसपास के हरित वातावरण का पूरा आनंद ले सकते हैं। यह स्थल न केवल धार्मिक दृष्टि से महत्वपूर्ण है बल्कि प्राकृतिक और आध्यात्मिक अनुभव के लिए भी आदर्श है। स्फटिक शिला का दौरा श्रद्धालुओं को मानसिक शांति, आध्यात्मिक ऊर्जा और अद्भुत स्मृतियाँ प्रदान करता है। यात्रा के दौरान प्राकृतिक सौंदर्य का सम्मान करना और शांत वातावरण बनाए रखना आवश्यक है।",
+   "mapLink": "https://maps.google.com/?q=Sphatik+Shila+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "अक्टूबर से मार्च, जब मौसम साफ और यात्रा के लिए सुखद होता है।",
+  "Highlights": "अनोखे चमकदार पत्थर, शांत प्राकृतिक वातावरण, ध्यान और प्रार्थना के लिए आदर्श।",
+  "Tips": "दिन में आएँ ताकि प्राकृतिक वातावरण और पत्थरों की चमक का पूरा अनुभव ले सकें।"
   },
   {
-    name: "सती अनुसुइया आश्रम",
-    image:
-      "https://visitplacesindia.com/wp-content/uploads/2024/11/sati-anusuya-temple.jpg",
-    images: [
-      "https://visitplacesindia.com/wp-content/uploads/2024/11/sati-anusuya-temple.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/48/Sati_Anusuiya_Ashram.jpg",
-      "https://static2.tripoto.com/media/filter/tst/img/470103/TripDocument/1512461962_img_20171204_153947_hdr.jpg",
-    ],
-    description: "An ashram devoted to Sati Anusuya.",
-    fullDescription:
-      "Sati Anusuya Ashram is an ancient site dedicated to the sage Atri and his wife Anusuya, revered for her devotion and piety. The ashram lies amid peaceful nature and holds mythological significance for its association with divine miracles.",
-    mapLink: "https://maps.google.com/?q=Sati+Anusuya+Ashram+Chitrakoot",
-    category: "Spiritual",
-    besttime: "October to March for pleasant weather and spiritual events.",
-    Highlights:
-      "Peaceful environment, divine mythology, and spiritual learning.",
-    Tips: "Plan a quiet visit for meditation and reflection.",
-  },
+  "name": "आरोग्यधाम",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1grfqosuPv2mm0Do_Q-fVBM-xFoSlQ81gZw&s",
+  "images": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1grfqosuPv2mm0Do_Q-fVBM-xFoSlQ81gZw&s",
+    "https://static2.tripoto.com/media/filter/tst/img/2106936/SpotDocument/1617183019_1617183017042.jpg.webp",
+    "https://static2.tripoto.com/media/filter/tst/img/2106936/SpotDocument/1617183021_1617183017439.jpg.webp",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1grfqosuPv2mm0Do_Q-fVBM-xFoSlQ81gZw&s",
+    "https://content.jdmagicbox.com/comp/chitrakoot-mp/z5/9999p7670.7670.171203140414.i8z5/catalogue/aarogya-dhaam-chitrakoot-ho-chitrakoot-mp-ayurvedic-hospitals-TCllPCJtED.jpg"
+  ],
+  "description": "आरोग्यधाम चित्रकूट का प्रसिद्ध स्वास्थ्य केंद्र है जहाँ आयुर्वेदिक और प्राकृतिक उपचार उपलब्ध हैं। यह स्थल स्वास्थ्य पर्यटन, योग और नैचुरल हीलिंग के लिए प्रसिद्ध है।",
+  "fullDescription": "आरोग्यधाम चित्रकूट में स्थित एक प्रमुख स्वास्थ्य और प्राकृतिक उपचार केंद्र है। यहाँ आयुर्वेदिक चिकित्सा, प्राकृतिक उपचार, योग और स्वास्थ्य पुनर्वास के लिए सुविधाएँ उपलब्ध हैं। लोग यहाँ शारीरिक और मानसिक स्वास्थ्य सुधारने, तनाव कम करने और जीवनशैली संतुलित करने के लिए आते हैं। केंद्र में आयुर्वेदिक पद्धतियों के अनुसार हर्बल उपचार, पंचकर्म, योग सत्र और ध्यान सत्र आयोजित किए जाते हैं। यह स्थल स्वास्थ्य और आध्यात्मिक अनुभव का अद्भुत मिश्रण प्रस्तुत करता है। मौसम के अनुसार उपचार का अनुभव और भी प्रभावशाली होता है, विशेषकर वसंत और शीत ऋतु में। आरोग्यधाम का वातावरण शांत, स्वच्छ और प्राकृतिक है, जो मन और शरीर को पुनर्जीवित करता है। यहाँ आने वाले लोग पूरी तरह से स्वास्थ्य लाभ और मानसिक शांति का अनुभव करते हैं। यात्रा करने से पहले उपचार के लिए बुकिंग करना और केंद्र की दिशानिर्देशों का पालन करना सर्वोत्तम परिणाम सुनिश्चित करता है। आरोग्यधाम केवल चिकित्सा केंद्र नहीं है, बल्कि यह आध्यात्मिक, प्राकृतिक और स्वास्थ्य पर्यटन का अद्वितीय स्थल है, जहाँ हर आगंतुक को शांति और ताजगी का अनुभव मिलता है।",
+  "mapLink": "https://maps.google.com/?q=Aarogya+Dham+Chitrakoot",
+  "category": "Wellness",
+  "besttime": "साल भर; विशेष रूप से वसंत और शीत ऋतु उपचार के लिए उपयुक्त हैं।",
+  "Highlights": "आयुर्वेदिक उपचार, स्वास्थ्य और योग रिट्रीट, प्राकृतिक हीलिंग।",
+  "Tips": "उपचार के लिए पहले से बुकिंग करें। केंद्र के निर्देशों का पालन करें ताकि सर्वोत्तम परिणाम मिलें।"
+},
+
+ {
+  "name": "देवांगना आश्रम",
+  "image": "https://content.jdmagicbox.com/v2/comp/bhavnagar/j7/0278px278.x278.220811222223.c1j7/catalogue/devanand-ashram-thansa-bhavnagar-ashrams-W0ejsG6h6n-250.jpg",
+  "images": [
+    "https://content.jdmagicbox.com/v2/comp/bhavnagar/j7/0278px278.x278.220811222223.c1j7/catalogue/devanand-ashram-thansa-bhavnagar-ashrams-W0ejsG6h6n-250.jpg",
+    "https://pbs.twimg.com/media/GoaAvd-WgAAZMp9.png",
+    "https://www.shutterstock.com/image-photo/beautiful-mountain-landscape-devangana-valley-260nw-2295717917.jpg",
+    "https://cms.patrika.com/wp-content/uploads/2020/09/14/devangna_airport.jpg",
+    "https://www.jagranimages.com/images/newimg/14082022/14_08_2022-14crt_3_14082022_304_22981808_404.jpg"
+  ],
+  "description": "देवांगना आश्रम चित्रकूट में कामदगिरि के पास स्थित एक शांतिपूर्ण स्थल है। यह आश्रम ध्यान, साधना और आध्यात्मिक अध्ययन के लिए आदर्श है। यहाँ का वातावरण प्राकृतिक हरियाली और शांति से भरा हुआ है।",
+  "fullDescription": "देवांगना आश्रम चित्रकूट के कामदगिरि पर्वत के पास स्थित एक प्रमुख आध्यात्मिक स्थल है। यह आश्रम श्रद्धालुओं और साधकों को ध्यान, साधना और धार्मिक अध्ययन के लिए आदर्श वातावरण प्रदान करता है। आश्रम के आसपास हरियाली, शांतिपूर्ण वातावरण और प्राकृतिक सुंदरता से भरपूर क्षेत्र है, जो मन और आत्मा दोनों को शांति प्रदान करता है। यहाँ नियमित ध्यान सत्र, योग अभ्यास और अध्यात्मिक शिक्षा कार्यक्रम आयोजित किए जाते हैं, जो आने वाले प्रत्येक व्यक्ति को मानसिक संतुलन और आध्यात्मिक ऊर्जा प्रदान करते हैं। अक्टूबर से मार्च का समय यहाँ आने के लिए सबसे उपयुक्त है, क्योंकि मौसम सुखद और आरामदायक होता है। आगंतुकों को सलाह दी जाती है कि वे आश्रम की शांति का सम्मान करें, ध्यान और साधना में भाग लें और प्राकृतिक वातावरण का आनंद लें। देवांगना आश्रम न केवल एक धार्मिक स्थल है बल्कि यह आध्यात्मिक शांति, प्राकृतिक सौंदर्य और मानसिक ताजगी का अनुभव प्रदान करने वाला अद्वितीय स्थल भी है। यहाँ आने वाले प्रत्येक व्यक्ति को आध्यात्मिक ऊर्जा, मानसिक शांति और स्मरणीय अनुभव प्राप्त होता है।",
+  "mapLink": "https://maps.google.com/?q=Devangana+Ashram+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद और ध्यान-साधना के लिए अनुकूल होता है।",
+  "Highlights": "शांत आश्रम, ध्यान सत्र, योग और प्राकृतिक वातावरण।",
+  "Tips": "स्थल की शांति का सम्मान करें और यदि संभव हो तो निर्धारित गतिविधियों में भाग लें।"
+},
+
   {
-    name: "कामदगिरि पर्वत",
-    image:
-      "https://thetempleguru.com/wp-content/uploads/2023/09/Kamadgiri-temple-Chitrakoot.jpg",
-    images: [
-      "https://thetempleguru.com/wp-content/uploads/2023/09/Kamadgiri-temple-Chitrakoot.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d7/Kamadgiri_Chitrakoot.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a5/Kamadgiri_Temple_Chitrakoot.jpg",
-    ],
-    description: "Forested hill with great religious value.",
-    fullDescription:
-      "Kamadgiri, meaning 'wish-fulfilling mountain,' is considered the heart of Chitrakoot. Circumambulating this forested hill is a revered ritual among pilgrims. It is surrounded by several temples dedicated to Lord Ram.",
-    mapLink: "https://maps.google.com/?q=Kamadgiri+Chitrakoot",
-    category: "Spiritual",
-    besttime: "September to March when the weather is ideal for trekking.",
-    Highlights: "Sacred forest trek, temples, and panoramic views.",
-    Tips: "Wear comfortable shoes and carry water. Start early to avoid afternoon heat.",
-  },
+  "name": "राम दर्शन संग्रहालय",
+  "image": "https://www.tourmyindia.com/states/uttarpradesh/images/ram-darshan-chitrakoot.jpg",
+  "images": [
+    "https://www.tourmyindia.com/states/uttarpradesh/images/ram-darshan-chitrakoot.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt91kOH08330mdrit2LD8RYN4qQ3f9dZKOSQ&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu0UUUlNkStOhYmKesZDudT7x5aIVlbGFh2g&s",
+    "https://pbs.twimg.com/media/Cu5UP3wWIAEZUjQ.jpg:large"
+    
+  ],
+  "description": "राम दर्शन संग्रहालय चित्रकूट में स्थित एक अद्वितीय आध्यात्मिक और सांस्कृतिक संग्रहालय है। यहाँ भगवान राम के जीवन, मूल्य और शिक्षाओं को प्रदर्शनी, मूर्तियाँ और नैरेटिव के माध्यम से प्रस्तुत किया गया है। यह स्थल तीर्थयात्रियों और पर्यटकों दोनों के लिए आदर्श है।",
+  "fullDescription": "राम दर्शन संग्रहालय चित्रकूट में स्थित एक अभिनव और विशेष संग्रहालय है, जो भगवान राम के जीवन, उनके आदर्शों और शिक्षाओं को कला और तकनीक के माध्यम से प्रस्तुत करता है। यहाँ विभिन्न डायोरामा, मूर्तियाँ और इंटरेक्टिव डिस्प्ले हैं, जो रामायण की घटनाओं, उनके चरित्र और नैतिक मूल्यों को दर्शाते हैं। यह संग्रहालय न केवल धार्मिक दृष्टि से महत्वपूर्ण है, बल्कि यह सांस्कृतिक और शैक्षिक दृष्टि से भी अत्यंत उपयोगी है। आगंतुक यहाँ आकर भगवान राम के जीवन और उनके संदेशों से प्रेरणा लेते हैं। संग्रहालय का वातावरण शांति और आध्यात्मिक ऊर्जा से भरा हुआ है, जो तीर्थयात्रियों और पर्यटकों दोनों को मंत्रमुग्ध कर देता है। यहाँ आकर लोग न केवल आध्यात्मिक ज्ञान प्राप्त करते हैं, बल्कि भारतीय संस्कृति और रामायण की कथाओं का गहन अनुभव भी करते हैं। विशेष अवसरों और त्योहारों के दौरान संग्रहालय में सांस्कृतिक कार्यक्रम और आयोजन होते हैं, जो अनुभव को और भी रोचक बनाते हैं। पूर्ण रूप से संग्रहालय देखने के लिए लगभग 1-2 घंटे का समय देना उचित होता है। यह स्थल बच्चों, युवाओं और वृद्ध सभी के लिए शैक्षिक और आध्यात्मिक दृष्टि से समृद्ध अनुभव प्रदान करता है।",
+  "mapLink": "https://maps.google.com/?q=Ram+Darshan+Museum+Chitrakoot",
+  "category": "Museum",
+  "besttime": "साल भर, विशेष रूप से त्योहारों के दौरान सांस्कृतिक कार्यक्रमों के लिए।",
+  "Highlights": "डायोरामा, मूर्तियाँ, इंटरेक्टिव डिस्प्ले, भगवान राम के जीवन और शिक्षाओं की प्रस्तुति।",
+  "Tips": "संपूर्ण अनुभव के लिए 1-2 घंटे का समय दें।"
+},
+
+
   {
-    name: "भारत कूप",
-    image:
-      "https://content.jdmagicbox.com/comp/chitrakoot-up/s9/9999p5198.5198.200627224325.c2s9/catalogue/bharatkoop-temple-chitrakoot-up-temples-4h0ednmnjB.jpg",
-    images: [
-      "https://content.jdmagicbox.com/comp/chitrakoot-up/s9/9999p5198.5198.200627224325.c2s9/catalogue/bharatkoop-temple-chitrakoot-up-temples-4h0ednmnjB.jpg",
-    ],
-    description: "A sacred well of holy waters.",
-    fullDescription:
-      "Bharat Koop is a massive well where Bharat stored holy water collected from various pilgrimage sites. He intended to anoint Lord Ram as king in his absence. The well is now a revered site with deep historical and spiritual importance.",
-    mapLink: "https://maps.google.com/?q=Bharat+Koop+Chitrakoot",
-    category: "Historical",
-    besttime: "Year-round, best in winter months from November to February.",
-    Highlights:
-      "Historic well, spiritual significance, and peaceful surroundings.",
-    Tips: "Visit early morning for quiet and better light for photos.",
-  },
+  "name": "गणेशबाग",
+  "image": "https://hblimg.mmtcdn.com/content/hubble/img/ttd_images/mmt/activities/m_Chitrakoot_Ganesh_bagh_1_l_479_640.jpg",
+  "images": [
+    "https://bundelkhand.xyz/wp-content/uploads/2021/08/%E0%A4%97%E0%A4%A3%E0%A5%87%E0%A4%B6-%E0%A4%AC%E0%A4%BE%E0%A4%97-%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%95%E0%A5%82%E0%A4%9F.jpg",
+    "https://images.news18.com/ibnkhabar/uploads/2023/07/3199659_HYP_0_FEATUREm_Chitrakoot_Ganesh_bagh_4_l_360_640.jpg?im=FitAndFill,width=1200,height=900",
+    "https://static2.tripoto.com/media/filter/tst/img/44384/TripDocument/19_img_4789.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMhMSc1YBJyS2eCtXftmBb5YZteQAUKo3LgGElqvceGLmEaKfFuKf0NDIcSkAQ9EfHfsc&usqp=CAU",
+    "https://64.media.tumblr.com/8b9edf2146464d1cdd7a77c1919b8a6b/tumblr_phpzfaCLfy1ru322to3_r1_1280.jpg"
+  ],
+  "description": "गणेशबाग चित्रकूट में स्थित एक सुरम्य उद्यान परिसर है। यह स्थल पेशवा विनायक राव द्वारा निर्मित था और इसमें मंदिर, कूप और महल के खंडहर हैं। यहाँ वास्तुकला और प्राकृतिक सुंदरता का अद्भुत संगम देखने को मिलता है।",
+  "fullDescription": "गणेशबाग चित्रकूट में स्थित एक ऐतिहासिक और सुरम्य उद्यान परिसर है। इसे पेशवा विनायक राव ने बनवाया था और यह माराठा वास्तुकला का उत्कृष्ट उदाहरण प्रस्तुत करता है। परिसर में एक मंदिर, सीढ़ीयुक्त कुआँ और पुराने महल के खंडहर शामिल हैं। हरियाली और बगीचों के बीच फैली यह जगह प्राकृतिक सौंदर्य के साथ ऐतिहासिक महत्त्व को भी समेटे हुए है। गणेशबाग का वातावरण शांत और मनोहारी है, जो इसे फोटोग्राफी और विरासत प्रेमियों के लिए आदर्श स्थल बनाता है। अक्टूबर से मार्च का समय यहाँ आने के लिए सबसे उपयुक्त है, क्योंकि मौसम सुखद और आरामदायक होता है। आगंतुक यहाँ खंडहरों और बगीचों का भ्रमण करते हुए इतिहास और प्राकृतिक वातावरण का आनंद ले सकते हैं। यहाँ की वास्तुकला, माराठा शैली और प्राकृतिक परिवेश का संगम हर दर्शक को मंत्रमुग्ध कर देता है। गणेशबाग न केवल ऐतिहासिक दृष्टि से महत्वपूर्ण है, बल्कि यह आराम, ध्यान और सांस्कृतिक अन्वेषण का अनुभव भी प्रदान करता है। यात्रा के दौरान कैमरा साथ रखें और उद्यान और खंडहरों का आनंद ले कर धीरे-धीरे भ्रमण करें।",
+  "mapLink": "https://maps.google.com/?q=Ganesh+Bagh+Chitrakoot",
+  "category": "Heritage",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद और फोटोग्राफी के लिए उपयुक्त हो।",
+  "Highlights": "माराठा वास्तुकला, उद्यान, सीढ़ीयुक्त कुआँ और महल के खंडहर।",
+  "Tips": "कैमरा साथ रखें और आराम से पूरे परिसर का भ्रमण करें।"
+},
+
   {
-    name: "हनुमान धारा",
-    image:
-      "https://visitplacesindia.com/wp-content/uploads/2024/11/hanuman-dhara.jpg",
-    images: [
-      "https://visitplacesindia.com/wp-content/uploads/2024/11/hanuman-dhara.jpg",
-    ],
-    description: "Spring and temple on a hill.",
-    fullDescription:
-      "Hanuman Dhara is a temple and spring dedicated to Lord Hanuman. Legend says the spring cooled him down after he burned Lanka. It involves a steep climb and offers panoramic views of Chitrakoot.",
-    mapLink: "https://maps.google.com/?q=Hanuman+Dhara+Chitrakoot",
-    category: "Spiritual",
-    besttime: "October to March for comfortable trekking conditions.",
-    Highlights: "Sacred spring, hill views, and temple atmosphere.",
-    Tips: "Be prepared for a climb; wear good shoes and carry water.",
-  },
+  "name": "मत्यगजेंद्रनाथ शिव मंदिर",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KmngQ-AbHYcjpmTuhGWnPQz6BYBTxGPORw&s",
+  "images": [
+    "https://images.news18.com/ibnkhabar/uploads/2025/02/HYP_4955081_cropped_03022025_201422_img20250203103142_watermar_1.jpg",
+    "https://media1.thrillophilia.com/filestore/afwwit6yo474kqsp714bt1w7545p_Screenshot%20(3).png",
+    "https://cms.patrika.com/wp-content/uploads/2022/07/15/satna1_7654482-m.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRczqnE3lRe_a4iWs6Lg2yAa_ZOme2FDjBfqw&s",
+    "https://hindi.cdn.zeenews.com/hindi/sites/default/files/styles/zm_700x400/public/2022/08/04/1252132-atgajendra-temple.jpg?itok=FvEbRR8c"
+  ],
+  "description": "मत्यगजेंद्रनाथ शिव मंदिर चित्रकूट का प्राचीन शिव मंदिर है। यह मंदिर हरियाली में स्थित है और स्थानीय आस्था और कथाओं के लिए प्रसिद्ध है। श्रद्धालु यहाँ शांति और आध्यात्मिक अनुभव के लिए आते हैं।",
+  "fullDescription": "मत्यगजेंद्रनाथ शिव मंदिर चित्रकूट में स्थित एक कम-परिचित लेकिन अत्यंत शक्तिशाली प्राचीन शिव मंदिर है। यह मंदिर हरियाली और प्राकृतिक वातावरण से घिरा हुआ है, जो आगंतुकों को शांति और ध्यान के लिए आदर्श स्थल प्रदान करता है। यहाँ स्थानीय लोगों की गहरी आस्था है और मंदिर से जुड़ी अनेक कथाएँ और परंपराएँ मौजूद हैं। श्रद्धालु यहाँ पूजा, अभिषेक और मंत्रोच्चारण के माध्यम से आध्यात्मिक ऊर्जा प्राप्त करते हैं। अक्टूबर से मार्च का समय यहाँ आने के लिए सर्वोत्तम माना जाता है, क्योंकि मौसम सुखद और उत्सवों के लिए अनुकूल होता है। मंदिर का वातावरण अत्यंत शांत और ध्यानयोग्य है, जो आगंतुकों को मानसिक सुकून और आध्यात्मिक शक्ति प्रदान करता है। यहाँ आकर लोग न केवल भगवान शिव की आराधना करते हैं, बल्कि मंदिर की ऐतिहासिकता और प्राकृतिक सौंदर्य का भी आनंद लेते हैं। विशेष अवसरों और महाशिवरात्रि जैसे उत्सवों के समय मंदिर का माहौल और भी जीवंत और भक्तिपूर्ण हो जाता है। आगंतुकों को सलाह दी जाती है कि वे मंदिर की परंपराओं और स्थानीय रीति-रिवाजों का सम्मान करें और शांतिपूर्वक दर्शन करें। मत्यगजेंद्रनाथ शिव मंदिर अपने धार्मिक, सांस्कृतिक और प्राकृतिक महत्व के कारण चित्रकूट आने वाले प्रत्येक व्यक्ति के लिए अविस्मरणीय अनुभव प्रदान करता है।",
+  "mapLink": "https://maps.google.com/?q=Matgajendranath+Shiv+Mandir+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद और उत्सवों के लिए उपयुक्त होता है।",
+  "Highlights": "प्राचीन शिव मंदिर, स्थानीय आस्था और परंपराएँ।",
+  "Tips": "उत्सवों के समय दर्शन करें ताकि जीवंत और भक्तिपूर्ण अनुभव प्राप्त हो।"
+},
+
   {
-    name: "जानकी कुंड",
-    image:
-      "https://cdn1.prayagsamagam.com/media/2023/05/12200021/Janki-kund-chitrakoot-2.webp",
-    images: [
-      "https://cdn1.prayagsamagam.com/media/2023/05/12200021/Janki-kund-chitrakoot-2.webp",
+  "name": "लक्ष्मण पहाड़ी",
+  "image": "https://content.jdmagicbox.com/comp/chitrakoot-up/f7/9999p5198.5198.220317233933.l6f7/catalogue/lakshman-pahadi-chitrakoot-h-o-chitrakoot-up-tourist-attraction-UreTJ4Q3JM.jpg",
+  "images": [
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVVPg8O6vMtrcW-UYXgqFFKFmvEviQe7Oxeg&s",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/e6/6a/11/lakshman-pahadi.jpg?w=900&h=500&s=1",
+    "https://content.jdmagicbox.com/comp/chitrakoot-up/f7/9999p5198.5198.220317233933.l6f7/catalogue/lakshman-pahadi-chitrakoot-h-o-chitrakoot-up-tourist-attraction-UreTJ4Q3JM.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/e6/6a/0b/ropeway-lakshman-pahadi.jpg?w=1200&h=1200&s=1",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/e6/6a/0f/temple-lakshman-pahadi.jpg?w=900&h=500&s=1"
     ],
-    description: "Serene pond linked to Sita.",
-    fullDescription:
-      "Janki Kund is a sacred water tank where Sita is believed to have bathed during her exile with Lord Ram. It is a quiet, meditative location offering spiritual serenity to pilgrims.",
-    mapLink: "https://maps.google.com/?q=Janki+Kund+Chitrakoot",
-    category: "Spiritual",
-    besttime: "November to February for calm weather.",
-    Highlights: "Peaceful water tank, spiritual aura, and meditation spots.",
-    Tips: "Ideal for quiet reflection; visit early to avoid crowds.",
-  },
+  "description": "लक्ष्मण पहाड़ी चित्रकूट का एक पवित्र स्थल है जहाँ परस्सिनी हनुमान मंदिर स्थित है। यह मंदिर स्थानीय आस्था के लिए प्रसिद्ध है और भक्तों की मनोकामनाएँ पूरी करने के लिए जाना जाता है। यहाँ का शांत वातावरण आध्यात्मिक अनुभव देता है।",
+  "fullDescription": "लक्ष्मण पहाड़ी में स्थित परस्सिनी हनुमान मंदिर एक ऐसा पवित्र स्थल है जहाँ भक्तों की मनोकामनाएँ पूरी होने की मान्यता है। यह मंदिर अधिकतर स्थानीय लोगों के लिए प्रसिद्ध है और चित्रकूट आने वाले तीर्थयात्रियों के लिए भी आध्यात्मिक ऊर्जा का स्रोत है। मंदिर का वातावरण अत्यंत शांत और ध्यानयोग्य है, जो आगंतुकों को मानसिक सुकून और आध्यात्मिक ताजगी प्रदान करता है। यहाँ आने वाले श्रद्धालु पूजा, हनुमान चालीसा पाठ और ध्यान के माध्यम से अपने जीवन में सकारात्मक ऊर्जा का अनुभव करते हैं। लक्ष्मण पहाड़ी की हरियाली और प्राकृतिक वातावरण भी इस स्थल की विशेषता है, जिससे यह एक आदर्श ध्यान और साधना स्थल बन जाता है। मंदिर में भक्तों का सतत आना और शांत वातावरण इसे आध्यात्मिक रूप से अत्यंत महत्वपूर्ण बनाता है। वर्ष भर किसी भी समय यहाँ आ सकते हैं, लेकिन सुबह जल्दी या शाम के समय आना सर्वोत्तम अनुभव प्रदान करता है। आगंतुकों को सलाह दी जाती है कि वे खुले हृदय और विश्वास के साथ यहाँ आएँ और मंदिर की शांति और परंपराओं का सम्मान करें। लक्ष्मण पहाड़ी हर आगंतुक को आध्यात्मिक ऊर्जा, मानसिक शांति और सकारात्मक अनुभव प्रदान करता है।",
+  "mapLink": "https://maps.google.com/?q=Parassini+Hanuman+Mandir+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "साल भर, विशेष रूप से सुबह जल्दी या शाम के समय।",
+  "Highlights": "मनोकामना पूरी करने वाला मंदिर, शांत और ध्यानयोग्य वातावरण।",
+  "Tips": "खुले हृदय और श्रद्धा के साथ दर्शन करें।"
+},
+
+ {
+  "name": "वाल्मीकि आश्रम",
+  "image": "https://images.bhaskarassets.com/web2images/521/2024/10/17/be5b6106-da8d-4ebe-bd6f-c76ed28274a8_1729159272321.jpg",
+  "images": [
+    "https://media1.thrillophilia.com/filestore/58wbxpuo922ea8va9ffvorpq24q7_2019-07-29.jpg",
+    "https://cdn1.prayagsamagam.com/media/2023/06/01152555/Valmiki-Ashram-4-1024x576.webp",
+    "https://mpholidays.com/wp-content/uploads/2022/10/Valmiki-Ashram-e1666335705709.jpg",
+    "https://hblimg.mmtcdn.com/content/hubble/img/ttd_images/mmt/activities/m_Chitrakoot_Valmiki_ashram_1_l_480_640.jpg",
+    "https://cdn1.prayagsamagam.com/media/2023/06/01152546/Valmiki-Ashram-7.webp"
+  ],
+  "description": "वाल्मीकि आश्रम चित्रकूट का प्रमुख धार्मिक स्थल है, जो महर्षि वाल्मीकि को समर्पित है। यह आश्रम अध्यात्मिक और धार्मिक दृष्टि से अत्यंत महत्वपूर्ण है।",
+  "fullDescription": "वाल्मीकि आश्रम चित्रकूट का प्रमुख धार्मिक और सांस्कृतिक केंद्र है। यह आश्रम महर्षि वाल्मीकि के आश्रम स्थल के रूप में प्रसिद्ध है, जहाँ वे रामायण की रचना के लिए रहे थे। यहाँ आने वाले श्रद्धालु ध्यान, पूजा और अध्ययन में भाग लेकर आध्यात्मिक अनुभव प्राप्त करते हैं। आश्रम का वातावरण अत्यंत पवित्र है और यह आगंतुकों को मानसिक शांति और धार्मिक अनुभव प्रदान करता है। अक्टूबर से मार्च का समय यहाँ आने के लिए सर्वोत्तम माना जाता है, क्योंकि मौसम सुखद रहता है और यह यात्रा को सुखद बनाता है। आश्रम परिसर साफ-सुथरा और व्यवस्थित है, और यहाँ की वास्तुकला धार्मिक और सांस्कृतिक दृष्टि से दर्शनीय है। आगंतुकों को सलाह दी जाती है कि वे आश्रम की परंपराओं का पालन करें, शांति बनाए रखें और ध्यान व साधना में समय व्यतीत करें।",
+  "mapLink": "https://maps.google.com/?q=Valmiki+Ashram+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद और यात्रा के लिए उपयुक्त हो।",
+  "Highlights": "महर्षि वाल्मीकि से संबंधित धार्मिक स्थल, आध्यात्मिक महत्व, सांस्कृतिक अनुभव।",
+  "Tips": "ध्यान और साधना में समय बिताएं, आश्रम की शांति और परंपरा का सम्मान करें।"
+},
+
+
   {
-    name: "स्पटिक शिला",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUwVE7fFsWViRoMQATEm5-EkuLINbZRh9png&s",
-    images: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUwVE7fFsWViRoMQATEm5-EkuLINbZRh9png&s",
-    ],
-    description: "Glowing stones linked to Ram & Sita.",
-    fullDescription:
-      "Sphatik Shila consists of two shiny stones believed to have been the sitting place of Lord Ram and Sita. Surrounded by lush greenery, it is a peaceful and spiritually enriching spot.",
-    mapLink: "https://maps.google.com/?q=Sphatik+Shila+Chitrakoot",
-    category: "Spiritual",
-    besttime: "October to March during clear weather.",
-    Highlights: "Unique glowing stones, serene natural setting.",
-    Tips: "Visit during daytime to appreciate natural surroundings.",
-  },
+  "name": "भरत मिलाप मंदिर",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT788MN80bEhZPZSC6ix2_lFULo4pXvCqA5Aw&s",
+  "images": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS42sClQyrvvnHdQl2brmvjkRoJy45Btqz8Sg&s",
+    "https://media-cdn.tripadvisor.com/media/photo-s/06/be/59/03/bharat-milap-mandir.jpg",
+    "https://hindi.oneindia.com/img/2024/01/cover261-1705743870.jpg",
+    "https://thetasteoftrip.com/wp-content/uploads/2024/06/DSC01939-scaled.jpg",
+    "https://files.yappe.in/place/full/ram-bharat-milap-10344351.webp"
+  ],
+  "description": "भरत मिलाप मंदिर चित्रकूट का प्रमुख धार्मिक स्थल है, जहाँ भगवान राम और उनके भाई भरत के मिलाप का स्मरण होता है। यह मंदिर धार्मिक दृष्टि से अत्यंत महत्वपूर्ण है।",
+  "fullDescription": "भरत मिलाप मंदिर चित्रकूट का एक अत्यंत महत्वपूर्ण धार्मिक स्थल है। यह मंदिर भगवान राम और उनके भाई भरत के मिलाप की घटना के लिए प्रसिद्ध है। यहाँ प्रतिदिन श्रद्धालु पूजा, भजन और आरती में भाग लेने आते हैं और भगवान राम और भरत के प्रति भक्ति भाव का अनुभव करते हैं। मंदिर का वातावरण पवित्र और आध्यात्मिक है, जो आगंतुकों को मानसिक शांति और धार्मिक अनुभव प्रदान करता है। अक्टूबर से मार्च का समय मंदिर यात्रा के लिए सर्वोत्तम माना जाता है, क्योंकि मौसम सुखद रहता है और यह यात्रा को आनंददायक बनाता है। मंदिर परिसर साफ-सुथरा और व्यवस्थित है, और यहाँ की वास्तुकला धार्मिक और सांस्कृतिक दृष्टि से दर्शनीय है। आगंतुकों को सलाह दी जाती है कि वे मंदिर की परंपराओं और नियमों का पालन करें, शांति बनाए रखें और सुबह या सांध्य समय में आरती में शामिल हों।",
+  "mapLink": "https://maps.google.com/?q=Bharat+Milap+Mandir+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद और यात्रा के लिए उपयुक्त हो।",
+  "Highlights": "भगवान राम और भरत का मिलाप, आध्यात्मिक महत्व, सांस्कृतिक अनुभव।",
+  "Tips": "सुबह या सांध्य समय में आरती में शामिल हों; मंदिर की शांति और परंपरा का सम्मान करें।"
+},
+
+ {
+  "name": "रामायण मेला",
+  "image": "https://www.jagranimages.com/images/newimg/12012020/12_01_2020-12crt-6-c-2_19930477_224127.jpg",
+  "images": [
+    "https://www.jagranimages.com/images/newimg/12012020/12_01_2020-12crt-6-c-2_19930477_224127.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/6/6b/Lohia_Ramayan_Mela_Auditorium_Complex_-_Chitrakoot_-_Uttar_Pradesh_-_2014-07-06_7220.JPG",
+    "https://upabtak.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-31-at-5.16.48-PM.jpeg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmfII8Q7S4oRNuoB2FoYmnnKhKuPyvXnKhw&s",
+    "https://images.bhaskarassets.com/web2images/521/2022/04/09/whatsapp-image-2022-04-09-at-113651-pm_1649527741.jpeg"
+  ],
+  "description": "रामायण मेला चित्रकूट का प्रमुख धार्मिक और सांस्कृतिक उत्सव है, जहाँ श्रद्धालु भगवान राम और उनके जीवन की कथाओं का स्मरण करते हैं। यह मेला भक्तों और पर्यटकों दोनों के लिए आकर्षक अनुभव प्रदान करता है।",
+  "fullDescription": "रामायण मेला चित्रकूट में हर वर्ष आयोजित होने वाला एक महत्वपूर्ण धार्मिक और सांस्कृतिक उत्सव है। यह मेला भगवान राम के जीवन, रामायण की कथाओं और उनकी शिक्षाओं को याद करने के लिए आयोजित किया जाता है। मेले के दौरान श्रद्धालु धार्मिक अनुष्ठानों, भजन-कीर्तन, कथा वाचन और सांस्कृतिक कार्यक्रमों में भाग लेते हैं। इस अवसर पर चित्रकूट का वातावरण भक्तिभाव और उत्साह से भर जाता है। अक्टूबर से मार्च का समय मेले के लिए सर्वोत्तम माना जाता है, क्योंकि मौसम सुखद और यात्रा के लिए उपयुक्त होता है। आगंतुकों को सलाह दी जाती है कि वे मेले में शामिल होकर धार्मिक कार्यक्रमों का अनुभव लें, शांति बनाए रखें और स्थानीय परंपराओं का सम्मान करें। रामायण मेला चित्रकूट यात्रा को धार्मिक, सांस्कृतिक और आध्यात्मिक दृष्टि से अविस्मरणीय बनाता है।",
+  "mapLink": "https://maps.google.com/?q=Ramayan+Mela+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद और यात्रा के लिए उपयुक्त हो।",
+  "Highlights": "धार्मिक अनुष्ठान, भजन-कीर्तन, सांस्कृतिक कार्यक्रम, रामायण की कथाएँ।",
+  "Tips": "मेले के दौरान धार्मिक और सांस्कृतिक कार्यक्रमों में भाग लें; शांति बनाए रखें।"
+},
+
+ {
+  "name": "ताठी घाट",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoW1Ibgi9fpV8HSL1Gi93h0bCrCfpBLXBPkA&s",
+  "images": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoW1Ibgi9fpV8HSL1Gi93h0bCrCfpBLXBPkA&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2i79DQo7n1knV-suxV3er5gJ2N_cef1WvNWnLKogoy7bhtysjq4ivnJqhu2axI_ne2_I&usqp=CAU",
+    "https://images.news18.com/ibnkhabar/uploads/2023/06/Tathi-Ghat-Chitrakoot-2.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoW1Ibgi9fpV8HSL1Gi93h0bCrCfpBLXBPkA&s",
+    "https://i.ytimg.com/vi/LF3ByjyMhI0/oar2.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLBydHtiALYtdKETjBx6iHOhEXQWBA"
+  ],
+  "description": "ताठी घाट चित्रकूट का प्रसिद्ध घाट है, जो धार्मिक और सांस्कृतिक दृष्टि से महत्वपूर्ण स्थल है। यहाँ आगंतुक गंगा जैसी नदी में स्नान, पूजा और ध्यान के लिए आते हैं।",
+  "fullDescription": "ताठी घाट चित्रकूट में स्थित एक प्रमुख धार्मिक और सांस्कृतिक स्थल है। यह घाट पवित्र नदियों के संगम और शांत वातावरण के लिए जाना जाता है। यहाँ श्रद्धालु स्नान, पूजा और ध्यान साधना के लिए आते हैं। अक्टूबर से मार्च का समय यहाँ आने के लिए सर्वोत्तम माना जाता है, क्योंकि मौसम सुखद और यात्रा के लिए अनुकूल होता है। घाट का प्राकृतिक सौंदर्य और नदी का शांत बहाव आगंतुकों को मानसिक शांति और आध्यात्मिक अनुभव प्रदान करता है। आगंतुकों को सलाह दी जाती है कि वे घाट पर शांति बनाए रखें, पूजा और धार्मिक अनुष्ठानों में सम्मिलित हों और स्थानीय परंपराओं का सम्मान करें। ताठी घाट चित्रकूट यात्रा का अविस्मरणीय अनुभव प्रदान करता है।",
+  "mapLink": "https://maps.google.com/?q=Tathi+Ghat+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद और यात्रा के लिए अनुकूल हो।",
+  "Highlights": "पवित्र घाट, स्नान, पूजा, ध्यान।",
+  "Tips": "घाट पर शांति बनाए रखें और धार्मिक अनुष्ठानों में भाग लें।"
+},
+
+
+ {
+  "name": "पंचवटी आरोग्यधाम",
+  "image": "https://hblimg.mmtcdn.com/content/hubble/img/ttd_images/mmt/activities/m_Chitrakoot_Panchwati_hotel_1_l_480_640.jpg",
+  "images": [
+    "https://hblimg.mmtcdn.com/content/hubble/img/ttd_images/mmt/activities/m_Chitrakoot_Panchwati_hotel_1_l_480_640.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm4TP5rqtDQ6RtORL8FFPWISR8r4GMWYNUSg&s",
+    "https://mindtrip.ai/cdn-cgi/image/format=webp,w=1200/https://iorigin.mindtrip.ai/attractions/6d39/0c9f/c78f/cbfd/7812/10c4/8382/1972",
+    "https://content.jdmagicbox.com/comp/chitrakoot-mp/f8/9999p7670.7670.181127204806.k4f8/catalogue/panchwati-hotel-chitrakoot-mp-restaurants-6b71j2rn7a.jpg",
+    "https://content3.jdmagicbox.com/v2/comp/chitrakoot-mp/k7/9999p7670.7670.250104104537.v8k7/catalogue/arogyadham-swasthya-kutir-chitrakoot-mp-resorts-hmwkchp3bp.jpg"
+  ],
+  "description": "पंचवटी आरोग्यधाम चित्रकूट में स्थित एक प्रमुख स्वास्थ्य और आध्यात्मिक स्थल है। यहाँ आगंतुक प्राकृतिक वातावरण में स्वास्थ्य, योग और ध्यान का अनुभव प्राप्त करते हैं।",
+  "fullDescription": "पंचवटी आरोग्यधाम चित्रकूट में स्थित एक महत्वपूर्ण स्वास्थ्य और आध्यात्मिक केंद्र है। यह स्थल प्राकृतिक सौंदर्य और शांत वातावरण के लिए प्रसिद्ध है। यहाँ आगंतुक योग, ध्यान और स्वास्थ्य संबंधी गतिविधियों में भाग लेकर मानसिक और शारीरिक ताजगी अनुभव करते हैं। अक्टूबर से मार्च का समय यहाँ आने के लिए सर्वोत्तम माना जाता है, क्योंकि मौसम सुखद और आरामदायक होता है। आरोग्यधाम का वातावरण अत्यंत शांति और सकारात्मक ऊर्जा से भरा होता है। आगंतुकों को सलाह दी जाती है कि वे यहाँ स्वास्थ्य व ध्यान सत्रों में भाग लें, प्राकृतिक वातावरण का सम्मान करें और सुविधा अनुसार कपड़े पहनें। पंचवटी आरोग्यधाम चित्रकूट यात्रा का स्वास्थ्य और आध्यात्मिक दृष्टि से अविस्मरणीय अनुभव प्रदान करता है।",
+  "mapLink": "https://maps.google.com/?q=Panchwati+Arogyadham+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद और यात्रा के लिए उपयुक्त हो।",
+  "Highlights": "योग, ध्यान, स्वास्थ्य गतिविधियाँ, प्राकृतिक वातावरण।",
+  "Tips": "आरोग्यधाम में योग और ध्यान सत्रों में भाग लें; सुविधाजनक कपड़े पहनें।"
+},
+
+
   {
-    name: "आरोग्यधाम",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1grfqosuPv2mm0Do_Q-fVBM-xFoSlQ81gZw&s",
-    images: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1grfqosuPv2mm0Do_Q-fVBM-xFoSlQ81gZw&s",
-    ],
-    description: "Healing center for Ayurvedic therapies.",
-    fullDescription:
-      "Aarogya Dham is a naturopathy center offering traditional Ayurvedic treatments. Visitors come here for wellness retreats and holistic healing, making it a blend of spirituality and health tourism.",
-    mapLink: "https://maps.google.com/?q=Aarogya+Dham+Chitrakoot",
-    category: "Wellness",
-    besttime: "All year round; spring and winter preferred for treatments.",
-    Highlights: "Ayurvedic therapies, wellness retreats, natural healing.",
-    Tips: "Book treatments in advance. Follow center guidelines for best results.",
-  },
+  "name": "धनुष ग्लास ब्रिज",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLuq4uVxWtYo3PBkfzZcP-dVARSMCctPjghA&s",
+  "images": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLuq4uVxWtYo3PBkfzZcP-dVARSMCctPjghA&s",
+    "https://images.news18.com/ibnkhabar/uploads/2024/04/EpmvqvzWMAEvJkf-2024-04-bc2bd5b697f5245f62a758c03c43e680.jpeg",
+    "https://pbs.twimg.com/media/F4CdDTGb0AAItJC.jpg:large",
+    "https://awadh360.com/assets/img/articles/202408020550IMG_6832.jpeg",
+    "https://5.imimg.com/data5/SELLER/Default/2022/6/VV/XO/UA/54225681/glass-bridge-sky-walk-500x500.jpeg"
+  ],
+  "description": "धनुष ग्लास ब्रिज चित्रकूट का एक प्रमुख आकर्षण है, जहाँ आगंतुक रोमांच और प्राकृतिक सौंदर्य का आनंद लेने आते हैं। यह ब्रिज सुरम्य घाटियों और हरियाली से घिरा हुआ है।",
+  "fullDescription": "धनुष ग्लास ब्रिज चित्रकूट में स्थित एक प्रमुख पर्यटक स्थल है। यह ब्रिज सुरम्य घाटियों और हरियाली से घिरा हुआ है और यहाँ आगंतुक रोमांच, फोटोग्राफी और प्रकृति का आनंद लेने आते हैं। ब्रिज का डिज़ाइन और उसकी पारदर्शी सतह दर्शकों को एक अनूठा और रोमांचक अनुभव प्रदान करती है। अक्टूबर से मार्च का समय ब्रिज यात्रा के लिए सर्वोत्तम माना जाता है, क्योंकि मौसम सुखद और यात्रा के लिए अनुकूल होता है। आगंतुकों को सलाह दी जाती है कि वे ब्रिज पर सुरक्षा नियमों का पालन करें, धैर्य बनाए रखें और प्राकृतिक वातावरण का सम्मान करें। धनुष ग्लास ब्रिज चित्रकूट यात्रा का रोमांचक और अविस्मरणीय अनुभव प्रदान करता है।",
+  "mapLink": "https://maps.google.com/?q=Dhanush+Glass+Bridge+Chitrakoot",
+  "category": "Adventure",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद और यात्रा के लिए उपयुक्त हो।",
+  "Highlights": "रोमांचक अनुभव, प्राकृतिक सौंदर्य, फोटोग्राफी।",
+  "Tips": "सुरक्षा नियमों का पालन करें और आरामदायक जूते पहनें।"
+},
+
+{
+  "name": "शबरी जलप्रपात",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA7Z8RuNTX3QCYisGhdSqAr6L6ecbdjHG9gQ&s",
+  "images": [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA7Z8RuNTX3QCYisGhdSqAr6L6ecbdjHG9gQ&s",
+    "https://www.chitrakootdham.com/wp-content/uploads/2021/07/sabari-jalprapat1.jpg",
+    "https://www.jagranimages.com/images/newimg/01082021/01_08_2021-chitrakoot_21886447.jpg",
+    "https://www.chitrakootdham.com/wp-content/uploads/2021/07/sabari-jalprapat3.jpg",
+    "https://cms.patrika.com/wp-content/uploads/2018/08/10/shabri_jal_prapaat.jpg"
+  ],
+  "description": "शबरी जलप्रपात चित्रकूट का एक प्राकृतिक और धार्मिक दृष्टि से महत्वपूर्ण स्थल है। यहाँ आगंतुक प्राकृतिक सौंदर्य का आनंद लेते हैं और मन को शांति मिलती है।",
+  "fullDescription": "शबरी जलप्रपात चित्रकूट में स्थित एक प्रमुख प्राकृतिक और धार्मिक स्थल है। यह जलप्रपात सुरम्य घाटियों और हरियाली से घिरा हुआ है और यहाँ आगंतुक प्रकृति का आनंद लेने के साथ ही धार्मिक भाव से भी जुड़ते हैं। अक्टूबर से मार्च का समय यहाँ आने के लिए सर्वोत्तम माना जाता है, क्योंकि मौसम सुखद और यात्रा के लिए अनुकूल होता है। जलप्रपात के आसपास का शांत वातावरण और प्राकृतिक सौंदर्य आगंतुकों को मानसिक शांति और ताजगी प्रदान करता है। आगंतुकों को सलाह दी जाती है कि वे जलप्रपात के किनारे स्वच्छता बनाए रखें और प्राकृतिक वातावरण का सम्मान करें। शबरी जलप्रपात चित्रकूट यात्रा का अविस्मरणीय प्राकृतिक और आध्यात्मिक अनुभव प्रदान करता है।",
+  "mapLink": "https://maps.google.com/?q=Shabari+Waterfall+Chitrakoot",
+  "category": "Nature",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद और यात्रा के लिए उपयुक्त हो।",
+  "Highlights": "प्राकृतिक सौंदर्य, शांत वातावरण, जलप्रपात।",
+  "Tips": "जलप्रपात के किनारे स्वच्छता बनाए रखें और प्राकृतिक वातावरण का सम्मान करें।"
+},
+
+ {
+  "name": "धारकुंडी आश्रम",
+  "image": "https://i1.wp.com/bundelkhand.xyz/wp-content/uploads/2020/09/5.jpg.webp",
+  "images": [
+    "https://i1.wp.com/bundelkhand.xyz/wp-content/uploads/2020/09/5.jpg.webp",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5cLyRE1SLFOZGTd1fImcHZ90oHaHu6fXZFw&s",
+    "https://i1.wp.com/bundelkhand.xyz/wp-content/uploads/2020/09/5.jpg",
+    "https://manchalaman.com/wp-content/uploads/2023/12/download-3-1.jpg",
+    "https://content.jdmagicbox.com/comp/satna/r2/9999p7672.7672.180206185738.c9r2/catalogue/dharkundi-aashram-satna-jvsl7ys34m.jpg"
+  ],
+  "description": "धारकुंडी आश्रम चित्रकूट का एक पवित्र स्थल है, जहाँ आगंतुक ध्यान, साधना और आध्यात्मिक अध्ययन के लिए आते हैं। यह आश्रम शांत वातावरण में स्थित है और मानसिक शांति प्रदान करता है।",
+  "fullDescription": "धारकुंडी आश्रम चित्रकूट में स्थित एक महत्वपूर्ण आध्यात्मिक केंद्र है। यह आश्रम ध्यान, साधना और धार्मिक अध्ययन के लिए प्रसिद्ध है। यहाँ आगंतुक योग, ध्यान और साधना सत्रों में भाग लेकर मानसिक शांति और आध्यात्मिक ऊर्जा प्राप्त करते हैं। आश्रम का वातावरण शांत और प्राकृतिक सौंदर्य से घिरा हुआ है, जो आगंतुकों को सकारात्मक अनुभव और आध्यात्मिक ताजगी प्रदान करता है। अक्टूबर से मार्च का समय आश्रम आने के लिए सर्वोत्तम माना जाता है, क्योंकि मौसम सुखद और यात्रा के लिए उपयुक्त होता है। आगंतुकों को सलाह दी जाती है कि वे आश्रम में मौन बनाए रखें, ध्यान और साधना सत्रों में भाग लें और स्थानीय परंपराओं का सम्मान करें। धारकुंडी आश्रम चित्रकूट यात्रा का आध्यात्मिक और शांत अनुभव प्रदान करता है।",
+  "mapLink": "https://maps.google.com/?q=Dharakundi+Ashram+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद और यात्रा के लिए उपयुक्त हो।",
+  "Highlights": "ध्यान, साधना, आध्यात्मिक अध्ययन, शांत वातावरण।",
+  "Tips": "आध्यात्मिक साधना और ध्यान सत्रों में भाग लें; मौन बनाए रखें।"
+},
+
+
   {
-    name: "देवांगना आश्रम",
-    image:
-      "https://content.jdmagicbox.com/v2/comp/bhavnagar/j7/0278px278.x278.220811222223.c1j7/catalogue/devanand-ashram-thansa-bhavnagar-ashrams-W0ejsG6h6n-250.jpg",
-    images: [
-      "https://content.jdmagicbox.com/v2/comp/bhavnagar/j7/0278px278.x278.220811222223.c1j7/catalogue/devanand-ashram-thansa-bhavnagar-ashrams-W0ejsG6h6n-250.jpg",
-    ],
-    description: "Peaceful retreat near Kamadgiri.",
-    fullDescription:
-      "Devangana Ashram offers a tranquil atmosphere for spiritual seekers. Located near Kamadgiri, it hosts meditation and learning activities and is surrounded by forest and serenity.",
-    mapLink: "https://maps.google.com/?q=Devangana+Ashram+Chitrakoot",
-    category: "Spiritual",
-    besttime: "October to March for pleasant weather and meditation sessions.",
-    Highlights: "Quiet ashram, meditation, and nature.",
-    Tips: "Respect silence and participate in scheduled activities if possible.",
-  },
-  {
-    name: "राम दर्शन संग्रहालय",
-    image: "https://www.ramvanvas.com/assets/images/ram-darshan.jpg",
-    images: [
-      "https://www.ramvanvas.com/assets/images/ram-darshan.jpg",
-      "https://www.ramvanvas.com/assets/images/gallery/ram-darshan-1.jpg",
-    ],
-    description: "A unique spiritual-culture themed museum.",
-    fullDescription:
-      "Ram Darshan is an innovative museum that presents the life, values, and teachings of Lord Ram through dioramas, sculptures, and narration. It blends spirituality, history, and moral values in an artistic form, ideal for both pilgrims and tourists.",
-    mapLink: "https://maps.google.com/?q=Ram+Darshan+Museum+Chitrakoot",
-    category: "Museum",
-    besttime: "All year, especially during festivals for cultural events.",
-    Highlights:
-      "Dioramas, sculptures, and interactive displays about Lord Ram.",
-    Tips: "Allocate 1-2 hours for full experience.",
-  },
-  {
-    name: "चरणपादुका",
-    image:
-      "https://www.trawell.in/admin/images/upload/220942395Chitrakoot_Charanpaduka_Main.jpg",
-    images: [
-      "https://www.trawell.in/admin/images/upload/220942395Chitrakoot_Charanpaduka_Main.jpg",
-    ],
-    description: "Sacred spot with Lord Ram's footprints.",
-    fullDescription:
-      "Charanpaduka is revered as the site where the footprints of Lord Ram are believed to be embedded in rock. Pilgrims visit to pay homage and seek blessings at this symbol of Ram’s journey during his exile.",
-    mapLink: "https://maps.google.com/?q=Charanpaduka+Chitrakoot",
-    category: "Spiritual",
-    besttime: "October to March for comfortable weather.",
-    Highlights: "Sacred footprints, spiritual importance.",
-    Tips: "Maintain silence and reverence while visiting.",
-  },
-  {
-    name: "गणेशबाग",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ganesh_Bagh_2.jpg",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ganesh_Bagh_2.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f2/Ganesh_Bagh_Chitrakoot.jpg",
-    ],
-    description: "Scenic garden complex with ruins.",
-    fullDescription:
-      "Ganesh Bagh is a picturesque garden complex built by Peshwa Vinayak Rao. It includes a temple, stepwell, and palace ruins. The fusion of Maratha architecture and nature makes it a charming location for photography and heritage lovers.",
-    mapLink: "https://maps.google.com/?q=Ganesh+Bagh+Chitrakoot",
-    category: "Heritage",
-    besttime: "October to March for pleasant weather and photography.",
-    Highlights: "Maratha architecture, gardens, and stepwell.",
-    Tips: "Carry a camera and explore at leisure.",
-  },
-  {
-    name: "मातगजेंद्रनाथ शिव मंदिर",
-    image:
-      "https://lh3.googleusercontent.com/p/AF1QipN8FLwmS4eQy7Z08BQm9vMnV3nB2aGvF6kBn34t=s680-w680-h510",
-    images: [
-      "https://lh3.googleusercontent.com/p/AF1QipN8FLwmS4eQy7Z08BQm9vMnV3nB2aGvF6kBn34t=s680-w680-h510",
-    ],
-    description: "Ancient Shiva temple with local devotion.",
-    fullDescription:
-      "Matgajendranath Temple is a less-explored yet powerful Shiva temple set amidst greenery. It holds strong local faith and legends, making it a peaceful and spiritually significant place to visit for quiet worship.",
-    mapLink:
-      "https://maps.google.com/?q=Matgajendranath+Shiv+Mandir+Chitrakoot",
-    category: "Spiritual",
-    besttime: "October to March for mild weather and festivals.",
-    Highlights: "Ancient Shiva temple, local traditions.",
-    Tips: "Attend during festivals for vibrant experience.",
-  },
-  {
-    name: "परासिनी हनुमान मंदिर",
-    image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/aa/3b/e2/parassini-muthappan.jpg?w=500&h=300&s=1",
-    images: [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/aa/3b/e2/parassini-muthappan.jpg?w=500&h=300&s=1",
-    ],
-    description: "Sacred Hanuman temple with local belief.",
-    fullDescription:
-      "Parassini Hanuman Mandir is revered for fulfilling the wishes of devotees. Known more to locals, it’s a peaceful place where visitors often feel spiritually rejuvenated.",
-    mapLink: "https://maps.google.com/?q=Parassini+Hanuman+Mandir+Chitrakoot",
-    category: "Spiritual",
-    besttime: "Year-round, best early morning or evening.",
-    Highlights: "Wish-fulfilling temple, quiet ambiance.",
-    Tips: "Visit with an open heart and faith.",
-  },
-  {
-    name: "रामराजा मंदिर",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ram_Raja_Temple_Chitrakoot.jpg/800px-Ram_Raja_Temple_Chitrakoot.jpg",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ram_Raja_Temple_Chitrakoot.jpg/800px-Ram_Raja_Temple_Chitrakoot.jpg",
-    ],
-    description: "Main temple dedicated to Lord Ram.",
-    fullDescription:
-      "Ram Raja Temple is the most significant temple in Chitrakoot, dedicated to Lord Ram. It is believed that the idol of Ram here is a living deity, and it attracts thousands of devotees daily.",
-    mapLink: "https://maps.google.com/?q=Ram+Raja+Mandir+Chitrakoot",
-    category: "Spiritual",
-    besttime: "October to March for festivals and pleasant weather.",
-    Highlights: "Living deity idol, spiritual significance.",
-    Tips: "Participate in morning aarti for an enriching experience.",
-  },
-  {
-    name: "काकभुशुंडी ताल",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Kakbhusundi_Tal.jpg/800px-Kakbhusundi_Tal.jpg",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Kakbhusundi_Tal.jpg/800px-Kakbhusundi_Tal.jpg",
-    ],
-    description: "A serene lake with mythological significance.",
-    fullDescription:
-      "Kakbhusundi Tal is a tranquil lake surrounded by lush greenery. It is associated with the sage Kakbhusundi, who is said to have narrated the Ramayana to Lord Shiva. The lake is ideal for meditation and enjoying nature.",
-    mapLink: "https://maps.google.com/?q=Kakbhusundi+Tal+Chitrakoot",
-    category: "Nature",
-    besttime: "October to March for pleasant weather.",
-    Highlights: "Serene lake, spiritual stories, and natural beauty.",
-    Tips: "Carry a book or journal for quiet reflection by the water.",
-  },
-  {
-    name: "सप्त ऋषि आश्रम",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Saptarishi_Ashram_Chitrakoot.jpg/800px-Saptarishi_Ashram_Chitrakoot.jpg",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Saptarishi_Ashram_Chitrakoot.jpg/800px-Saptarishi_Ashram_Chitrakoot.jpg",
-    ],
-    description: "Ashram of the seven sages with spiritual significance.",
-    fullDescription:
-      "Sapt Rishi Ashram is believed to be the meditation site of the seven sages who composed the Ramayana. It is a serene place for meditation and spiritual learning, surrounded by natural beauty.",
-    mapLink: "https://maps.google.com/?q=Sapt+Rishi+Ashram+Chitrakoot",
-    category: "Spiritual",
-    besttime: "October to March for comfortable weather.",
-    Highlights: "Spiritual learning, meditation, and natural surroundings.",
-    Tips: "Engage in meditation or yoga sessions offered at the ashram.",
-  },
-  {
-    name: "कौशिकी आश्रम",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Koushiki_Ashram_Chitrakoot.jpg/800px-Koushiki_Ashram_Chitrakoot.jpg",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Koushiki_Ashram_Chitrakoot.jpg/800px-Koushiki_Ashram_Chitrakoot.jpg",
-    ],
-    description: "Ashram dedicated to the sage Koushika.",
-    fullDescription:
-      "Koushiki Ashram is dedicated to the sage Koushika, who is believed to have meditated here. It is a peaceful place for spiritual seekers and offers a glimpse into ancient wisdom.",
-    mapLink: "https://maps.google.com/?q=Koushiki+Ashram+Chitrakoot",
-    category: "Spiritual",
-    besttime: "October to March for pleasant weather.",
-    Highlights: "Spiritual teachings, meditation, and tranquility.",
-    Tips: "Participate in spiritual discussions or meditation sessions.",
-  },
-  {
-    name: "रामघाट जलाशय",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ramghat_Jalashaya_Chitrakoot.jpg/800px-Ramghat_Jalashaya_Chitrakoot.jpg",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ramghat_Jalashaya_Chitrakoot.jpg/800px-Ramghat_Jalashaya_Chitrakoot.jpg",
-    ],
-    description: "A serene water reservoir with spiritual significance.",
-    fullDescription:
-      "Ramghat Jalashaya is a tranquil water reservoir where devotees often come to perform rituals and seek blessings. It is surrounded by lush greenery and offers a peaceful environment for meditation.",
-    mapLink: "https://maps.google.com/?q=Ramghat+Jalashaya+Chitrakoot",
-    category: "Nature",
-    besttime: "October to March for pleasant weather.",
-    Highlights: "Serene water body, spiritual rituals, and natural beauty.",
-    Tips: "Carry a camera to capture the serene landscape.",
-  },
-  {
-    name: "रामकृष्ण आश्रम",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ramakrishna_Ashram_Chitrakoot.jpg/800px-Ramakrishna_Ashram_Chitrakoot.jpg",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ramakrishna_Ashram_Chitrakoot.jpg/800px-Ramakrishna_Ashram_Chitrakoot.jpg",
-    ],
-    description:
-      "Ashram dedicated to the teachings of Ramakrishna Paramahamsa.",
-    fullDescription:
-      "Ramakrishna Ashram is dedicated to the teachings of Ramakrishna Paramahamsa and Swami Vivekananda. It serves as a center for spiritual learning and meditation, attracting seekers from all over.",
-    mapLink: "https://maps.google.com/?q=Ramakrishna+Ashram+Chitrakoot",
-    category: "Spiritual",
-    besttime: "October to March for comfortable weather.",
-    Highlights: "Spiritual teachings, meditation, and community service.",
-    Tips: "Engage in spiritual discussions or volunteer activities.",
-  },
-  {
-    name: "रामकृष्ण मठ",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ramakrishna_Math_Chitrakoot.jpg/800px-Ramakrishna_Math_Chitrakoot.jpg",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ramakrishna_Math_Chitrakoot.jpg/800px-Ramakrishna_Math_Chitrakoot.jpg",
-    ],
-    description: "Monastic order following Ramakrishna's teachings.",
-    fullDescription:
-      "Ramakrishna Math is a monastic order that follows the teachings of Ramakrishna Paramahamsa. It serves as a spiritual retreat and offers various programs for spiritual seekers.",
-    mapLink: "https://maps.google.com/?q=Ramakrishna+Math+Chitrakoot",
-    category: "Spiritual",
-    besttime: "October to March for pleasant weather.",
-    Highlights: "Spiritual teachings, meditation, and community service.",
-    Tips: "Participate in meditation sessions or spiritual discussions.",
-  },
-  {
-    name: "रामायण पार्क",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ramayana_Park_Chitrakoot.jpg/800px-Ramayana_Park_Chitrakoot.jpg",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ramayana_Park_Chitrakoot.jpg/800px-Ramayana_Park_Chitrakoot.jpg",
-    ],
-    description: "A park themed around the Ramayana.",
-    fullDescription:
-      "Ramayana Park is a beautifully landscaped park that showcases scenes from the Ramayana through sculptures and art installations. It is a great place for families and children to learn about the epic in an engaging way.",
-    mapLink: "https://maps.google.com/?q=Ramayana+Park+Chitrakoot",
-    category: "Cultural",
-    besttime: "October to March for pleasant weather.",
-    Highlights:
-      "Sculptures, art installations, and family-friendly environment.",
-    Tips: "Ideal for picnics and educational visits.",
-  },
-  {
-    name: "सीता रसोई",
-    image: "https://live.staticflickr.com/8271/29511793955_7fefca21c0_b.jpg",
-    images: ["https://live.staticflickr.com/8271/29511793955_7fefca21c0_b.jpg"],
-    description: "Believed to be Sita's kitchen.",
-    fullDescription:
-      "Sita Rasoi is a sacred location believed to be the kitchen where Sita cooked during the exile. It reflects simple living and divine connection, drawing those interested in mythology and spirituality.",
-    mapLink: "https://maps.google.com/?q=Sita+Rasoi+Chitrakoot",
-    category: "Spiritual",
-    besttime: "October to March for pleasant weather.",
-    Highlights: "Mythological significance, serene atmosphere.",
-    Tips: "Visit with respect and engage in quiet reflection.",
-  },
-  {
-    name: "लव कुश जन्म स्थान",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3f/Luv_Kush_birth_place_Chitrakoot.jpg",
-    images: [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3f/Luv_Kush_birth_place_Chitrakoot.jpg",
-    ],
-    description: "Birthplace of Luv & Kush.",
-    fullDescription:
-      "This spiritual site is believed to be the birthplace of Luv and Kush, the sons of Lord Ram and Sita. It is nestled in a calm, rural setting and visited by those tracing the Ramayana journey.",
-    mapLink: "https://maps.google.com/?q=Luv+Kush+Birth+Place+Chitrakoot",
-    category: "Mythology",
-    besttime: "October to March for pleasant weather.",
-    Highlights: "Mythological significance, serene rural setting.",
-    Tips: "Engage with local guides to learn more about the legends.",
-  },
-  {
-    name: "वाल्मीकि आश्रम",
-    image:
-      "https://www.trawell.in/admin/images/upload/220942395Chitrakoot_ValmikiAshram_Main.jpg",
-    images: [
-      "https://www.trawell.in/admin/images/upload/220942395Chitrakoot_ValmikiAshram_Main.jpg",
-    ],
-    description: "Sage Valmiki's ancient ashram.",
-    fullDescription:
-      "Valmiki Ashram is a revered site where sage Valmiki is said to have composed the Ramayana. It also holds significance as the place where Sita took refuge and raised Luv and Kush. A sacred and tranquil place of devotion and reflection.",
-    mapLink: "https://maps.google.com/?q=Valmiki+Ashram+Chitrakoot",
-    category: "Spiritual",
-    besttime: "October to March for pleasant weather.",
-    Highlights:
-      "Historical significance, serene environment, and spiritual teachings.",
-    Tips: "Engage in meditation or spiritual discussions with the ashram residents.",
-  },
+  "name": "सीता रसोई",
+  "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/38/ba/fa/sita-rasoi.jpg?w=1200&h=-1&s=1",
+  "images": [
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/38/ba/fa/sita-rasoi.jpg?w=1200&h=-1&s=1",
+    "https://images.herzindagi.info/image/2023/Oct/sita-rasoi-chitrakoot-dham-mandir-ayodhya-up.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/38/ba/f7/sita-rasoi.jpg?w=800&h=500&s=1",
+    "https://feeds.abplive.com/onecms/images/uploaded-images/2021/12/28/400a37d55d79b8fddae5ddaaacc2ba98e478f.jpg",
+    "https://images.tv9gujarati.com/wp-content/uploads/2022/05/SITA-RASOI.jpg"
+  ],
+  "description": "सीता रसोई चित्रकूट का एक पवित्र स्थल है, जहाँ माना जाता है कि माता सीता ने वनवास के दौरान खाना बनाया था। यहाँ सरल जीवन और धार्मिक आस्था का अनुभव मिलता है, जो भक्तों और पर्यटकों को आध्यात्मिक शांति प्रदान करता है।",
+  "fullDescription": "सीता रसोई चित्रकूट में स्थित एक अत्यंत पवित्र और धार्मिक स्थल है। यह स्थान उस रसोई के रूप में प्रसिद्ध है जहाँ माता सीता ने अपने वनवास के समय भोजन बनाया था। यहाँ आने वाले श्रद्धालु और पर्यटक उस समय की साधारण जीवन शैली और आध्यात्मिक अनुभव का अनुभव कर सकते हैं। सीता रसोई का वातावरण शांत और सुकून देने वाला है, जो व्यक्ति के मन को शांति और मानसिक संतुलन प्रदान करता है। अक्टूबर से मार्च का समय यहाँ आने के लिए सर्वोत्तम माना जाता है, क्योंकि मौसम सुहावना और आरामदायक होता है। आगंतुक यहाँ ध्यान और मनन करके अपने जीवन में आध्यात्मिक ऊर्जा और सकारात्मकता प्राप्त कर सकते हैं। यह स्थल धार्मिक कथाओं और भारतीय संस्कृति का जीवंत उदाहरण है। यहाँ आकर व्यक्ति न केवल धर्म और आस्था का अनुभव करता है, बल्कि इतिहास और संस्कृति से भी जुड़ाव महसूस करता है। श्रद्धालु सीता रसोई में आकर शांतिपूर्ण वातावरण का आनंद लेते हैं और अपने मन को पूर्ण रूप से आध्यात्मिक अनुभव में डुबो सकते हैं।",
+  "mapLink": "https://maps.google.com/?q=Sita+Rasoi+Chitrakoot",
+  "category": "Spiritual",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद और आरामदायक हो।",
+  "Highlights": "पौराणिक महत्व, शांत वातावरण।",
+  "Tips": "सम्मानपूर्वक दर्शन करें और ध्यान व चिंतन में समय बिताएँ।"
+},
+
+  
+ {
+  "name": "ग्रामोदय विश्वविद्यालय",
+  "image": "https://gramodayachitrakoot.ac.in/wp-content/uploads/2025/06/WhatsApp-Image-2025-05-28-at-17.28.37.jpeg",
+  "images": [
+    "https://gramodayachitrakoot.ac.in/wp-content/uploads/2025/06/WhatsApp-Image-2025-05-28-at-17.28.37.jpeg",
+    "https://gramodayachitrakoot.ac.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-31-at-3.01.09-PM.jpeg",
+    "https://content.jdmagicbox.com/comp/chitrakoot-mp/n6/9999p7670.7670.130517111347.j7n6/catalogue/mahatma-gandhi-chitrakoot-gramodaya-vishwavidyalaya-chitrakoot-ho-chitrakoot-mp-universities-b5mrr2u.jpg",
+    "https://www.vidyavision.com/CollegeUploads/Photos/2018-23-2-14-38-30_M1.jpg",
+    "https://www.admissionspao.com/College_Portal/CollegeDetails/COLLEGE-674c365eefc0f-3.jpeg"
+  ],
+  "description": "ग्रामोदय विश्वविद्यालय चित्रकूट का एक महत्वपूर्ण शैक्षिक और सांस्कृतिक केंद्र है। यहाँ छात्र उच्च शिक्षा, अनुसंधान और सामाजिक विकास के लिए आते हैं।",
+  "fullDescription": "ग्रामोदय विश्वविद्यालय चित्रकूट में स्थित एक प्रमुख शैक्षिक संस्थान है। यह विश्वविद्यालय विभिन्न अकादमिक कार्यक्रमों, शोध गतिविधियों और सामाजिक विकास के लिए प्रसिद्ध है। यहाँ छात्र उच्च शिक्षा प्राप्त करते हैं, सांस्कृतिक और सामाजिक गतिविधियों में भाग लेते हैं और अपने ज्ञान और कौशल का विकास करते हैं। विश्वविद्यालय का शांत और प्राकृतिक वातावरण अध्ययन और अनुसंधान के लिए आदर्श है। अक्टूबर से मार्च का समय यहाँ आने और परिसर का दौरा करने के लिए सर्वोत्तम माना जाता है, क्योंकि मौसम सुखद और आरामदायक होता है। आगंतुकों को सलाह दी जाती है कि वे परिसर में शांति बनाए रखें और विश्वविद्यालय की नियमावली और परंपराओं का सम्मान करें। ग्रामोदय विश्वविद्यालय शिक्षा, अनुसंधान और सामाजिक सेवा के क्षेत्र में चित्रकूट की महत्वपूर्ण धरोहर प्रस्तुत करता है।",
+  "mapLink": "https://maps.google.com/?q=Gramodaya+University+Chitrakoot",
+  "category": "Education",
+  "besttime": "अक्टूबर से मार्च, जब मौसम सुखद और यात्रा के लिए उपयुक्त हो।",
+  "Highlights": "शैक्षिक कार्यक्रम, शोध गतिविधियाँ, सामाजिक विकास।",
+  "Tips": "विश्वविद्यालय परिसर का दौरा शांति और नियमों का पालन करते हुए करें।"
+}
+
 ];
 
 export default Spot;
