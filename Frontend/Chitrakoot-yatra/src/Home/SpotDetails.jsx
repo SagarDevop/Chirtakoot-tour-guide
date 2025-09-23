@@ -74,9 +74,9 @@ const SpotDetails = () => {
   
 
 
-  <div className="min-h-screen bg-[#EAD7B7] text-gray-900 p-4 mt-20 text-center">
+  <div className="h-min-screen bg-[#EAD7B7] text-gray-900 p-4 text-center">
     {/* Spot ka Naam */}
-    <h1 className="text-5xl md:text-6xl font-extrabold text-gray-500 text-center mb-8
+    <h1 className="text-5xl md:text-6xl font-extrabold text-[#99744A] text-center mt-20 mb-8
                drop-shadow-2xl">{spot.name}</h1>
    {/* Images horizontal scroll, scroller hidden */}
 <div
@@ -110,42 +110,42 @@ const SpotDetails = () => {
     </div>
 
    <div className=""></div>
-  <div className="bg-amber-100 p-8 rounded-lg shadow-md w-full max-w-7xl mx-auto h-[100vh] flex relative flex-col gap-12">
+  <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-7xl mx-auto h-[120vh] flex relative flex-col gap-12">
     
     <div className="w-full flex gap-4">
 
   {/*  Best Time Box */}
-  <div className="flex-1 bg-rose-100 p-4 rounded-xl shadow-md border border-gray-200">
-    <h3 className="text-base font-semibold text-gray-800 mb-2">Best Time</h3>
-    <p className="text-sm text-gray-700">{spot.besttime}</p>
+  <div className="flex-1 bg-[#99744A] p-4 rounded-xl shadow-md border border-gray-200">
+    <h3 className="text-base font-semibold text-white mb-2">Best Time</h3>
+    <p className="text-sm text-white">{spot.besttime}</p>
   </div>
 
   {/*  Tips & Highlights Box */}
-  <div className="flex-1 bg-rose-100 p-4 rounded-xl shadow-md border border-gray-200">
-    <h3 className="text-base font-semibold text-gray-800 mb-2">Tips </h3>
-    <p className="text-sm text-gray-700">{spot.Tips}</p>
+  <div className="flex-1 bg-[#99744A] p-4 rounded-xl shadow-md border border-gray-200">
+    <h3 className="text-base font-semibold text-white mb-2">Tips </h3>
+    <p className="text-sm text-white">{spot.Tips}</p>
   </div>
    
-   <div className="flex-1 bg-rose-100 p-4 rounded-xl shadow-md border border-gray-200">
-    <h3 className="text-base font-semibold text-gray-800 mb-2">Highlights </h3>
-    <p className="text-sm text-gray-700">{spot.Highlights}</p>
+   <div className="flex-1 bg-[#99744A] p-4 rounded-xl shadow-md border border-gray-200">
+    <h3 className="text-base font-semibold text-white mb-2">Highlights </h3>
+    <p className="text-sm text-white">{spot.Highlights}</p>
   </div>
    
 </div>
 
     {/* Description */}
-   <div className="w-full bg-[#EFE6DD] p-4 rounded-lg shadow text-gray-800 text-lg ">
-     <h2 className="text-base font-semibold text-gray-800 mb-4">संक्षिप्त वर्णन</h2>
+   <div className="w-full bg-[#414A37] p-4 rounded-lg shadow text-white text-lg ">
+     <h2 className="text-base font-semibold text-white mb-4">संक्षिप्त वर्णन</h2>
 
     {spot.description}
   </div>
 
    {/* Full Description */}
-  <div className="w-full bg-[#EFE6DD] p-4 rounded-lg shadow text-gray-700  h-[50vh] ">
-   <h2 className="text-base font-semibold text-gray-800 mb-4"> {spot.name} का इतिहास और धार्मिक महत्व</h2>
+  <div className="w-full bg-[#414A37] p-4 rounded-lg shadow text-white  h-[50vh] ">
+   <h2 className="text-base font-semibold text-white mb-4"> {spot.name} का इतिहास और धार्मिक महत्व</h2>
 
     {spot.fullDescription}
-    <div className="mt-10"><button className="bg-green-900 text-white py-2 px-4 rounded-md"><a href={spot.mapLink}>MapLINK</a></button></div>
+    <div className="mt-10"><button className="bg-white text-black py-2 px-4 rounded-md hover:bg-black hover:text-white"><a href={spot.mapLink}>📍 Show on Map</a></button></div>
 
     
     
