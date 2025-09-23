@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { MapContainer, TileLayer, Polyline, Marker, Popup, useMap } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  Polyline,
+  Marker,
+  Popup,
+  useMap,
+} from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 // Component to fit map bounds
@@ -18,67 +25,98 @@ function RickshawTour() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-// Calculate distance in km
-function haversineDistance([lat1, lon1], [lat2, lon2]) {
-  const toRad = (deg) => (deg * Math.PI) / 180;
-  const R = 6371; // Radius of the Earth in km
-  const dLat = toRad(lat2 - lat1);
-  const dLon = toRad(lon2 - lon1);
-  const a =
-    Math.sin(dLat / 2) ** 2 +
-    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  return R * c;
-}
-
-
+  // Call backend → Google Maps Geocode API
   const getCoordinates = async (place) => {
     const res = await fetch(
-      `https://chitrakoot-yatra.onrender.com/map/geocode?text=${encodeURIComponent(place)}`
+      `https://chitrakoot-yatra.onrender.com/map/geocode?text=${encodeURIComponent(
+        place
+      )}`
     );
     if (!res.ok) throw new Error("Failed to get coordinates");
     const data = await res.json();
-    const coords = data.features?.[0]?.geometry?.coordinates;
-    console.log(coords)
-    if (!coords) throw new Error(`Could not find location: ${place}`);
-    return coords;
+    const coords = data.results?.[0]?.geometry?.location;
+    if (!coords)
+      throw new Error(`Could not find location: ${place}`);
+    return [coords.lat, coords.lng]; // return in [lat, lng]
   };
 
   const handleSearch = async () => {
-  if (!from || !to) return alert("Enter both locations");
-  setLoading(true);
+    if (!from || !to) return alert("Enter both locations");
+    setLoading(true);
+    setError("");
 
-  try {
-    const fromCoordsRaw = await getCoordinates(from); // [lon, lat]
-    const toCoordsRaw = await getCoordinates(to);     // [lon, lat]
+    try {
+      const fromCoords = await getCoordinates(from); // [lat, lng]
+      const toCoords = await getCoordinates(to); // [lat, lng]
 
-    if (!fromCoordsRaw || !toCoordsRaw) {
-      alert("Could not find one of the locations");
+      // Call backend → Google Directions API
+      const res = await fetch(
+        `https://chitrakoot-yatra.onrender.com/map/directions?start=${fromCoords[1]},${fromCoords[0]}&end=${toCoords[1]},${toCoords[0]}`
+      );
+      const data = await res.json();
+
+      if (!res.ok || data.status === "ZERO_RESULTS") {
+        throw new Error("No route found between these locations");
+      }
+
+      // Extract polyline points
+      const points =
+        data.routes[0].overview_polyline.points;
+      const decoded = decodePolyline(points);
+
+      const distance =
+        data.routes[0].legs[0].distance.text;
+      const duration =
+        data.routes[0].legs[0].duration.text;
+
+      setRoute({
+        fromCoords,
+        toCoords,
+        coords: decoded,
+        distance,
+        duration,
+      });
+    } catch (err) {
+      console.error(err);
+      setError(err.message);
+    } finally {
       setLoading(false);
-      return;
     }
+  };
 
-    // Convert to [lat, lon] for Haversine
-    const fromCoords = [fromCoordsRaw[1], fromCoordsRaw[0]];
-    const toCoords = [toCoordsRaw[1], toCoordsRaw[0]];
+  // Decode polyline from Google Directions API
+  function decodePolyline(str) {
+    let index = 0,
+      lat = 0,
+      lng = 0,
+      coordinates = [];
 
-    // Calculate straight-line distance
-    const distance = haversineDistance(fromCoords, toCoords).toFixed(2);
+    while (index < str.length) {
+      let b,
+        shift = 0,
+        result = 0;
+      do {
+        b = str.charCodeAt(index++) - 63;
+        result |= (b & 0x1f) << shift;
+        shift += 5;
+      } while (b >= 0x20);
+      let dlat = (result & 1) !== 0 ? ~(result >> 1) : result >> 1;
+      lat += dlat;
 
-    setRoute({
-      fromCoords,
-      toCoords,
-      coords: [fromCoords, toCoords], // straight line
-      distance,
-      duration: Math.ceil(distance / 15 * 60), // approx: assume rickshaw 15 km/h
-    });
-  } catch (err) {
-    console.error(err);
-    alert(err.message);
-  } finally {
-    setLoading(false);
+      shift = 0;
+      result = 0;
+      do {
+        b = str.charCodeAt(index++) - 63;
+        result |= (b & 0x1f) << shift;
+        shift += 5;
+      } while (b >= 0x20);
+      let dlng = (result & 1) !== 0 ? ~(result >> 1) : result >> 1;
+      lng += dlng;
+
+      coordinates.push([lat / 1e5, lng / 1e5]);
+    }
+    return coordinates;
   }
-};
 
   return (
     <div className="min-h-screen bg-[#DBC2A6] flex flex-col items-center justify-center p-6">
@@ -113,10 +151,18 @@ function haversineDistance([lat1, lon1], [lat2, lon2]) {
         <div className="mt-6 w-full max-w-3xl">
           <div className="bg-white p-4 rounded-xl shadow mb-4">
             <h2 className="text-xl font-semibold">Trip Details</h2>
-            <p><b>From:</b> {from}</p>
-            <p><b>To:</b> {to}</p>
-            <p><b>Distance:</b> {route.distance} km</p>
-            <p><b>Duration:</b> {route.duration} mins</p>
+            <p>
+              <b>From:</b> {from}
+            </p>
+            <p>
+              <b>To:</b> {to}
+            </p>
+            <p>
+              <b>Distance:</b> {route.distance}
+            </p>
+            <p>
+              <b>Duration:</b> {route.duration}
+            </p>
           </div>
 
           <MapContainer
