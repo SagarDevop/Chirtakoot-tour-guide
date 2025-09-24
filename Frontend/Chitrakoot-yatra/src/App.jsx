@@ -12,6 +12,7 @@ import AuthForm from './Components/Authform';
 import Profile from './Components/Profile';
 import ReckshawTour from './Components/ReckshawTour';
 import Hotel from './Components/Hotel';
+import Booking from './Components/Booking';
 
 function App() {
   
@@ -29,6 +30,7 @@ function App() {
           <Route path = "/profile" element={<Profile/>} />
           <Route path = "/rickshaw-tour" element={<ReckshawTour/>} />
           <Route path = "/hotels" element={<Hotel/>} />
+          <Route path = "/booking" element={<Booking/>} />
         </Routes>
       
       <Toaster
