@@ -1,6 +1,6 @@
 import express from "express"
-import { bookingform } from "../controllers/bookingController";
-import { verifyjwt } from "../middleware/auth.middelware";
+import { bookingform } from "../controllers/bookingController.js";
+import { verifyjwt } from "../middleware/auth.middelware.js";
 
 const router = express.Router();
 
