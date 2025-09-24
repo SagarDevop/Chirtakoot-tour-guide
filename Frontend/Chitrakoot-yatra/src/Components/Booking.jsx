@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { FaPhoneAlt, FaMapMarkerAlt, FaInfoCircle, FaWhatsapp } from "react-icons/fa";
 import axios from 'axios'
+import toast from "react-hot-toast";
 
 function Booking() {
   const location = useLocation();
@@ -20,14 +21,27 @@ function Booking() {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    let res = await axios.post('https://chitrakoot-yatra.onrender.com/booker/booking')
-    console.log({
-      phone: formData.phone,
-      from: formData.from,
-      to: locName,
-      passengers: formData.passengers,
-    });
-    alert("✅ Booking submitted! We’ll contact you soon.");
+    try {
+      let res = await axios.post('https://chitrakoot-yatra.onrender.com/booker/booking',
+        {
+          phone: formData.phone,
+          from: formData.from,
+          to: locName,
+          passengers: formData.passengers
+        },{
+          Credentials: true
+        }
+      );
+      toast.success("✅ Booking submitted! We’ll contact you soon.")
+      console.log(res.data)
+   }
+   catch (error) {
+  const errorMessage = error.response?.data?.message || "Something went wrong";
+  toast.error(errorMessage, { duration: 3000 });
+  }
+
+  setFormData({ phone: '', from: '', passengers: '' });
+  
   };
 
   return (
