@@ -49,7 +49,7 @@ export const signin = async (req, res) => {
         })
 
         
-        const responseUser = await User.findById(exitingUser._id).select("-password -refreshToken -_id -createdAt -updatedAt")
+        const responseUser = await User.findById(exitingUser._id).select("-password -refreshToken -createdAt -updatedAt")
         
         const options = {
         httpOnly: true,
@@ -115,7 +115,7 @@ export const login = async(req, res) =>{
 
     const {accessToken, refreshToken} = await generateAccessAndRefreshToken(exitingUser._id)
 
-    const responseUser = await User.findById(exitingUser._id).select("-password -_id -createdAt -updatedAt")
+    const responseUser = await User.findById(exitingUser._id).select("-password -createdAt -updatedAt")
 
     const options = {
         httpOnly: true,
