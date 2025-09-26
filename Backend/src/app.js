@@ -3,6 +3,7 @@ import authRoutes from './routes/authRoutes.js'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 import bookingRoutes from './routes/bookingRoutes.js'
+import serverless from "serverless-http";
 
 
 const allowedOrigins = [
@@ -33,5 +34,5 @@ app.get('/', (req, res) => {
 });
 
 
-export { app };
+export default serverless(app);
 
