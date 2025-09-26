@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://chitrakoot-yatra.onrender.com", 
+  baseURL: "https://chitrakoot-yatra.vercel.app", 
   withCredentials: true, 
 });
 
