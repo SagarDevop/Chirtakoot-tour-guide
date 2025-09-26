@@ -40,16 +40,17 @@ export const signin = async (req, res) => {
         errors: [],
       });
         }
-        const {accessToken, refreshToken} = await generateAccessAndRefreshToken(exitingUser._id)
+        
 
         const user = await User.create({
             name,
             email,
             password
         })
+        const {accessToken, refreshToken} = await generateAccessAndRefreshToken(user._id)
 
         
-        const responseUser = await User.findById(exitingUser._id).select("-password -refreshToken -createdAt -updatedAt")
+        const responseUser = await User.findById(user._id).select("-password -refreshToken -createdAt -updatedAt")
         
         const options = {
         httpOnly: true,
