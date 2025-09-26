@@ -27,7 +27,7 @@ export const verifyjwt =async(req, res, next) => {
         )
      }
  
-     const user = await User.findById(verifiedToken._id).select("-password -accessToken")
+     const user = await User.findById(verifiedToken.id).select("-password -accessToken")
      if(!user){
          throw new ApiError(401, "innvalid user token ")
         }
