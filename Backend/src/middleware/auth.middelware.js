@@ -32,11 +32,12 @@ export const verifyjwt =async(req, res, next) => {
      req.user = user;
      next()
    } catch (error) {
-    new ApiError(
-        200,
-        "veified",
-        error
-    )
+    console.error("JWT verification failed:", error);
+    return res.status(500).json({
+      success: false,
+      message: "Authentication failed",
+      error: error.message,
+   });
     
    }
 
