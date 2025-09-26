@@ -40,6 +40,8 @@ export const signin = async (req, res) => {
         errors: [],
       });
         }
+        const {accessToken, refreshToken} = await generateAccessAndRefreshToken(exitingUser._id)
+
         const user = await User.create({
             name,
             email,
@@ -48,9 +50,15 @@ export const signin = async (req, res) => {
 
         
         const responseUser = await User.findById(user._id).select("-password -refreshToken -_id -createdAt -updatedAt")
-
+        
+        const options = {
+        httpOnly: true,
+        secure: true
+    }
         return res
         .status(200)
+        .cookie("accessToken", accessToken, options)
+        .cookie("refreshToken", refreshToken, options)
         .json(
             new ApiResponse(
                 200,
