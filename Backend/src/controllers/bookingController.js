@@ -1,5 +1,6 @@
 import { Booking } from "../models/bookingModel.js";
 import { ApiError } from "../utils/ApiError.js";
+import { sendEmail } from "../utils/sendEmail.js";
 
 export const bookingform = async(req, res) =>{
     try {
@@ -23,6 +24,38 @@ export const bookingform = async(req, res) =>{
             passengers,
             booker: req.user._id
         })
+
+         await sendEmail(
+      req.user.email,
+      "Your Booking Confirmation - Chitrakoot Yatra",
+      `
+        <h2>Booking Confirmed ✅</h2>
+        <p>Hi ${req.user.name},</p>
+        <p>Your booking has been successfully registered.</p>
+        <p><strong>From:</strong> ${from}</p>
+        <p><strong>To:</strong> ${to}</p>
+        <p><strong>Passengers:</strong> ${passengers}</p>
+        <p>Phone: ${phone}</p>
+        <br/>
+        <p>🙏 Thank you for choosing Chitrakoot Yatra</p>
+      `
+    );
+
+    
+    await sendEmail(
+      process.env.ADMIN_EMAIL,
+      "New Booking Received - Chitrakoot Yatra",
+      `
+        <h2>New Booking Alert 🚖</h2>
+        <p>A new booking has been made:</p>
+        <p><strong>User:</strong> ${req.user.name} (${req.user.email})</p>
+        <p><strong>From:</strong> ${from}</p>
+        <p><strong>To:</strong> ${to}</p>
+        <p><strong>Passengers:</strong> ${passengers}</p>
+        <p>Phone: ${phone}</p>
+      `
+    );
+
     
         return res
         .status(200)
