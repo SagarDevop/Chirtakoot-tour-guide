@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { FaPhoneAlt, FaMapMarkerAlt, FaInfoCircle, FaWhatsapp } from "react-icons/fa";
 import axios from 'axios'
 import toast from "react-hot-toast";
+import api from "../api.js";
 
 function Booking() {
   const location = useLocation();
@@ -22,14 +23,12 @@ function Booking() {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      let res = await axios.post('https://chitrakoot-yatra.onrender.com/booker/booking',
+      let res = await api.post('/booker/booking',
         {
           phone: formData.phone,
           from: formData.from,
           to: locName,
           passengers: formData.passengers
-        },{
-          Credentials: true
         }
       );
       toast.success("✅ Booking submitted! We’ll contact you soon.")

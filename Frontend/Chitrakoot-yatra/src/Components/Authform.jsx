@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import {useNavigate } from 'react-router-dom';
 import axios from 'axios'; 
 import toast from "react-hot-toast";
+import api from '../api.js';
 
 
 
 function AuthForm() {
+
   const navigate = useNavigate()
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({
@@ -29,24 +31,20 @@ function AuthForm() {
   try {
     let res;
     if (isLogin) {
-      res = await axios.post('https://chitrakoot-yatra.onrender.com/api/login', {
+      res = await api.post('/api/login', {
         email: formData.email,
         password: formData.password,
-      },{
-         credentials: true,
-      }
+      },
     );
       toast.success("Login successfully 🙏", { autoClose: 2000});
       navigate('/')
       
     } else {
-      res = await axios.post('https://chitrakoot-yatra.onrender.com/api/signin', {
+      res = await api.post('/api/signin', {
         name: formData.name,
         email: formData.email,
         password: formData.password,
-      },{
-         credentials: true,
-      });
+      },);
       toast.success("welcome sir in our web")
       navigate('/')
     }
