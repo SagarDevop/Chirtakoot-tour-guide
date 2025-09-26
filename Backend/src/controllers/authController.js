@@ -54,7 +54,8 @@ export const signin = async (req, res) => {
         
         const options = {
         httpOnly: true,
-        secure: true
+        secure: true,
+        sameSite: "None"
     }
         return res
         .status(200)
@@ -120,7 +121,8 @@ export const login = async(req, res) =>{
 
     const options = {
         httpOnly: true,
-        secure: true
+        secure: true,
+        sameSite: "None"
     }
 
     return res
@@ -208,7 +210,8 @@ try {
     
      const options = {
         httpOnly: true,
-        secure: true
+        secure: true,
+        sameSite: "None"
      }
     
      const {accessToken, newrefreshToken} = generateAccessAndRefreshToken(user._id)
