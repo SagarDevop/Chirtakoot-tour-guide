@@ -4,6 +4,6 @@ import { verifyjwt } from "../middleware/auth.middelware.js";
 
 const router = express.Router();
 
-router.post('/booking',bookingform)
+router.post('/booking', verifyjwt, bookingform)
 
 export default router;

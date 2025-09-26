@@ -4,6 +4,7 @@ import { Home, Map, Car, Hotel, User, Menu, X } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
+import api from "../api.js";
 
 export default function Navbar() {
   const location = useLocation();
@@ -44,10 +45,10 @@ export default function Navbar() {
 
   const handleLogout = async () => {
     try {
-      await axios.post(
-        "https://chitrakoot-yatra.onrender.com/api/logout",
+      await api.post(
+        "/api/logout",
         {},
-        { withCredentials: true }
+        
       );
 
       localStorage.removeItem("user");
