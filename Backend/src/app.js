@@ -3,6 +3,7 @@ import authRoutes from './routes/authRoutes.js'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 import bookingRoutes from './routes/bookingRoutes.js'
+import hotelRoutes from './routes/hotelRoutes.js'
 
 
 const allowedOrigins = [
@@ -27,6 +28,7 @@ app.use(express.json());
 app.use(cookieParser())
 app.use('/api', authRoutes);
 app.use('/booker', bookingRoutes);
+app.use('/hotel', hotelRoutes);
 //for testing that the server is running
 app.get('/', (req, res) => {
     res.send('API is running...');

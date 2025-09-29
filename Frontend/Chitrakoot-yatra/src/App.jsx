@@ -8,11 +8,12 @@ import Home from './Components/Home'
 import Tester from './Components/Tester'
 import TouristSpots from './Home/TouristSpots'
 import SpotDetails from './Home/SpotDetails';
+import ReckshawTour from './Components/ReckshawTour'
 import AuthForm from './Components/Authform';
 import Profile from './Components/Profile';
-import ReckshawTour from './Components/ReckshawTour';
-import Hotel from './Components/Hotel';
+import HotelSection from './Hotels/HotelSection';
 import Booking from './Components/Booking';
+import HotelDetail from './Hotels/HotelDetail';
 
 function App() {
   
@@ -29,8 +30,9 @@ function App() {
           <Route path="/account" element={<AuthForm />} />
           <Route path = "/profile" element={<Profile/>} />
           <Route path = "/rickshaw-tour" element={<ReckshawTour/>} />
-          <Route path = "/hotels" element={<Hotel/>} />
+          <Route path = "/hotels" element={<HotelSection/>} />
           <Route path = "/booking" element={<Booking/>} />
+          <Route path = "/hoteldetail/:name" element={<HotelDetail/>} />
         </Routes>
       
       <Toaster

@@ -10,20 +10,8 @@ export const sendEmail = async (to, subject, html) => {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS?.trim() 
     
-  },
-  
-  logger: true,
-  debug: true,
-  tls: {
-    rejectUnauthorized: false
-  },
-  greetingTimeout: 10000,
-  connectionTimeout: 10000,
-  socketTimeout: 10000
-  
-});
-console.log("Email User:", process.env.EMAIL_USER);
-console.log("Email Pass length:", process.env.EMAIL_PASS?.length);
+  } });
+
 
 
     await transporter.sendMail({
