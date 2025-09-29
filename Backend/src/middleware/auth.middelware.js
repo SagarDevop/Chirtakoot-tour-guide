@@ -38,7 +38,7 @@ export const verifyjwt =async(req, res, next) => {
     console.error("JWT verification failed:", error);
     return res.status(500).json({
       success: false,
-      message: "Authentication failed",
+      message: "Login First to....Proceed",
       error: error.message,
    });
     

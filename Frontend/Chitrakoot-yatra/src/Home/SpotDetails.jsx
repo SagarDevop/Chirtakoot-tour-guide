@@ -2,9 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { motion } from "framer-motion";
 import Spot from "../Data/Spot";
-import Typewriter from "typewriter-effect";
 
 gsap.registerPlugin(ScrollTrigger);
 
