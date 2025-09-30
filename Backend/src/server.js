@@ -3,6 +3,7 @@ import connectDB from './config/db.js';
 
 const PORT = process.env.PORT || 8080;
 
+
 connectDB()
 .then(() => {
     app.listen(PORT, () => {
