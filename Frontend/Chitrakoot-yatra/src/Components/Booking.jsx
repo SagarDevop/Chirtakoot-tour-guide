@@ -1,14 +1,24 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { FaPhoneAlt, FaMapMarkerAlt, FaInfoCircle, FaWhatsapp } from "react-icons/fa";
-import axios from 'axios'
+import {
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaInfoCircle,
+  FaWhatsapp,
+} from "react-icons/fa";
+import axios from "axios";
 import toast from "react-hot-toast";
 import api from "../api.js";
+import Loader from "./Loader.jsx";
 
 function Booking() {
   const location = useLocation();
-  const { name: locName, image: locImage, description: locDescription } =
-    location.state || {};
+  const [loading, setLoading] = useState(false);
+  const {
+    name: locName,
+    image: locImage,
+    description: locDescription,
+  } = location.state || {};
 
   const [formData, setFormData] = useState({
     phone: "",
@@ -20,27 +30,26 @@ function Booking() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
-      let res = await api.post('/booker/booking',
-        {
-          phone: formData.phone,
-          from: formData.from,
-          to: locName,
-          passengers: formData.passengers
-        }
-      );
-      toast.success("✅ Booking submitted! We’ll contact you soon.")
-      console.log(res.data)
-   }
-   catch (error) {
-  const errorMessage = error.response?.data?.message || "Something went wrong";
-  toast.error(errorMessage, { duration: 3000 });
-  }
-
-  setFormData({ phone: '', from: '', passengers: '' });
-  
+      let res = await api.post("/booker/booking", {
+        phone: formData.phone,
+        from: formData.from,
+        to: locName,
+        passengers: formData.passengers,
+      });
+      toast.success("✅ Booking submitted! We’ll contact you soon.");
+      console.log(res.data);
+    } catch (error) {
+      const errorMessage =
+        error.response?.data?.message || "Something went wrong";
+      toast.error(errorMessage, { duration: 3000 });
+    } finally {
+      setLoading(false);
+      setFormData({ phone: "", from: "", passengers: "" });
+    }
   };
 
   return (
@@ -59,7 +68,9 @@ function Booking() {
 
         {/* Booking Form Center */}
         <div className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-2xl shadow-lg p-8 text-white mb-14 w-[50%] ml-[25vw]">
-          <h2 className="text-2xl font-semibold mb-6 text-center">Fill Your Details</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-center">
+            Fill Your Details
+          </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Phone Number */}
             <div>
@@ -102,7 +113,9 @@ function Booking() {
 
             {/* Passengers */}
             <div>
-              <label className="block mb-1 font-medium">Number of Passengers</label>
+              <label className="block mb-1 font-medium">
+                Number of Passengers
+              </label>
               <select
                 name="passengers"
                 value={formData.passengers}
@@ -119,10 +132,20 @@ function Booking() {
 
             {/* Submit */}
             <button
-              type="submit"
-              className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+              type="button"
+              onClick={handleSubmit}
+              disabled={loading}
+              className={`w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-lg shadow-lg transition-transform transform hover:scale-105 ${
+                loading ? "opacity-70 cursor-not-allowed" : ""
+              }`}
             >
-              Confirm Booking
+              {loading ? (
+                <>
+                  <Loader /> <span>Processing...</span>
+                </>
+              ) : (
+                "Confirm Booking"
+              )}
             </button>
           </form>
         </div>
