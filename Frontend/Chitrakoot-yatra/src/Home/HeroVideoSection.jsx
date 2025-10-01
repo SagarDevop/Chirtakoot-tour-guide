@@ -87,13 +87,13 @@ const HeroVideoSection = () => {
 
     <div className="flex flex-col sm:flex-row gap-4">
       <a
-        href="/spots"
+        href="/tourist-spots"
         className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold transition"
       >
         Explore Spots
       </a>
       <a
-        href="/tours"
+        href="/rickshaw-tour"
         className="bg-white/20 hover:bg-white/30 border border-white text-white px-6 py-3 rounded-full font-semibold transition"
       >
         Book Rickshaw Tour
