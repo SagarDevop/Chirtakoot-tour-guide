@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Tester from "../Components/Tester";
+import  { Link } from "react-router-dom";
 
 const videoSources = [
   "Vedio/stock-footage-chitrakoot-india-jul-priests-perform-aarti-at-ram-ghat-at-night-up.mp4",
@@ -86,18 +87,18 @@ const HeroVideoSection = () => {
     </p>
 
     <div className="flex flex-col sm:flex-row gap-4">
-      <a
-        href="/tourist-spots"
+      <Link
+        to="/tourist-spots"
         className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold transition"
       >
         Explore Spots
-      </a>
-      <a
-        href="/rickshaw-tour"
+      </Link>
+      <Link
+        to="/rickshaw-tour"
         className="bg-white/20 hover:bg-white/30 border border-white text-white px-6 py-3 rounded-full font-semibold transition"
       >
         Book Rickshaw Tour
-      </a>
+      </Link>
     </div>
   </div>
 </div>
