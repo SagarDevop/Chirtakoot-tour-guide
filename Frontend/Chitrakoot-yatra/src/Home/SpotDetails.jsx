@@ -15,10 +15,6 @@ const SpotDetails = () => {
 
   const images = spot?.images?.length ? spot.images : [spot?.image];
 
- function mapLink(){
-  
- }
-
   useEffect(() => {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer || images.length <= 1) return;
@@ -68,92 +64,71 @@ const SpotDetails = () => {
     );
   }
 
- return (
-  
+  return (
+    <div className="min-h-screen bg-[#EAD7B7] text-gray-900 p-4 text-center">
+      <h1 className="text-4xl md:text-6xl font-extrabold text-[#99744A] text-center mt-20 mb-8 drop-shadow-2xl">
+        {spot.name}
+      </h1>
 
+      <div
+        ref={scrollRef}
+        className="flex overflow-x-auto space-x-4 mb-6 scrollbar-hide"
+        style={{
+          scrollbarWidth: "none",
+          msOverflowStyle: "none",
+        }}
+      >
+        {images.map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt={`${spot.name} ${index}`}
+            className="w-[80vw] sm:w-[50vw] md:w-[30vw] lg:w-[25vw] h-[40vh] sm:h-[50vh] rounded-lg object-cover flex-shrink-0"
+            style={{ scrollSnapAlign: "start" }}
+          />
+        ))}
+      </div>
 
-  <div className="h-min-screen bg-[#EAD7B7] text-gray-900 p-4 text-center">
-    {/* Spot ka Naam */}
-    <h1 className="text-5xl md:text-6xl font-extrabold text-[#99744A] text-center mt-20 mb-8
-               drop-shadow-2xl">{spot.name}</h1>
-   {/* Images horizontal scroll, scroller hidden */}
-<div
-  className="flex overflow-x-auto space-x-4 mb-6 scrollbar-hide"
-  style={{
-    scrollbarWidth: "none", // Firefox
-    msOverflowStyle: "none" // IE 10+
-  }}
->
-  {images.map((img, index) => (
-    <img
-      key={index}
-      src={img}
-      alt={`${spot.name} ${index}`}
-      className="w-[25vw] h-[50vh] max-w-md flex-shrink-0 rounded-lg object-cover"
-      style={{ scrollSnapAlign: "start" }} // optional for smooth snap
-      
-    />
-  ))}
-</div>
-<div
-  ref={scrollRef}
-  className="flex overflow-x-auto space-x-4 mb-6"
-  style={{
-    scrollbarWidth: "none", // Firefox
-    msOverflowStyle: "none" // IE 10+
-  }}
-  >
+      <div className="bg-white p-6 md:p-10 rounded-lg shadow-md w-full max-w-7xl mx-auto flex flex-col gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-[#99744A] p-4 rounded-xl shadow-md text-white">
+            <h3 className="text-lg font-semibold mb-2">Best Time</h3>
+            <p className="text-sm">{spot.besttime}</p>
+          </div>
+          <div className="bg-[#99744A] p-4 rounded-xl shadow-md text-white">
+            <h3 className="text-lg font-semibold mb-2">Tips</h3>
+            <p className="text-sm">{spot.Tips}</p>
+          </div>
+          <div className="bg-[#99744A] p-4 rounded-xl shadow-md text-white">
+            <h3 className="text-lg font-semibold mb-2">Highlights</h3>
+            <p className="text-sm">{spot.Highlights}</p>
+          </div>
+        </div>
 
+        <div className="w-full bg-[#414A37] p-6 rounded-lg shadow text-white text-base md:text-lg">
+          <h2 className="text-lg font-semibold mb-4">संक्षिप्त वर्णन</h2>
+          {spot.description}
+        </div>
 
+        <div className="w-full bg-[#414A37] p-6 rounded-lg shadow text-white text-base md:text-lg">
+          <h2 className="text-lg font-semibold mb-4">
+            {spot.name} का इतिहास और धार्मिक महत्व
+          </h2>
+          {spot.fullDescription}
+          <div className="mt-8">
+            <a
+              href={spot.mapLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-black py-2 px-6 rounded-md hover:bg-black hover:text-white transition"
+            >
+              📍 Show on Map
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-
-   <div className=""></div>
-  <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-7xl mx-auto h-[120vh] flex relative flex-col gap-12">
-    
-    <div className="w-full flex gap-4">
-
-  {/*  Best Time Box */}
-  <div className="flex-1 bg-[#99744A] p-4 rounded-xl shadow-md border border-gray-200">
-    <h3 className="text-base font-semibold text-white mb-2">Best Time</h3>
-    <p className="text-sm text-white">{spot.besttime}</p>
-  </div>
-
-  {/*  Tips & Highlights Box */}
-  <div className="flex-1 bg-[#99744A] p-4 rounded-xl shadow-md border border-gray-200">
-    <h3 className="text-base font-semibold text-white mb-2">Tips </h3>
-    <p className="text-sm text-white">{spot.Tips}</p>
-  </div>
-   
-   <div className="flex-1 bg-[#99744A] p-4 rounded-xl shadow-md border border-gray-200">
-    <h3 className="text-base font-semibold text-white mb-2">Highlights </h3>
-    <p className="text-sm text-white">{spot.Highlights}</p>
-  </div>
-   
-</div>
-
-    {/* Description */}
-   <div className="w-full bg-[#414A37] p-4 rounded-lg shadow text-white text-lg ">
-     <h2 className="text-base font-semibold text-white mb-4">संक्षिप्त वर्णन</h2>
-
-    {spot.description}
-  </div>
-
-   {/* Full Description */}
-  <div className="w-full bg-[#414A37] p-4 rounded-lg shadow text-white  h-[50vh] ">
-   <h2 className="text-base font-semibold text-white mb-4"> {spot.name} का इतिहास और धार्मिक महत्व</h2>
-
-    {spot.fullDescription}
-    <div className="mt-10"><button className="bg-white text-black py-2 px-4 rounded-md hover:bg-black hover:text-white"><a href={spot.mapLink}>📍 Show on Map</a></button></div>
-
-    
-    
-    
-  </div>
-  
-</div>
-</div>
-);
-
+  );
 };
 
 export default SpotDetails;

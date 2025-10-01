@@ -44,7 +44,6 @@ function AuthForm() {
         navigate("/");
       }
 
-      // Save user data
       localStorage.setItem("user", JSON.stringify(res.data.data));
       window.dispatchEvent(new Event("res.data.data"));
     } catch (error) {
@@ -52,7 +51,7 @@ function AuthForm() {
         error.response?.data?.message || "Something went wrong";
       toast.error(errorMessage, { duration: 3000 });
     } finally {
-      setLoading(false); // ✅ Always reset loader
+      setLoading(false); 
       setFormData({ name: "", email: "", password: "" });
     }
   };
@@ -63,8 +62,6 @@ function AuthForm() {
         <h2 className="text-2xl font-bold text-white text-center mb-6">
           {isLogin ? "Login to Your Account" : "Create a New Account"}
         </h2>
-
-        {/* Toggle Buttons */}
         <div className="flex justify-center mb-4">
           <button
             className={`px-4 py-2 font-semibold rounded-l ${
@@ -84,7 +81,6 @@ function AuthForm() {
           </button>
         </div>
 
-        {/* Form */}
         <form className="space-y-4" onSubmit={handleSubmit}>
           {!isLogin && (
             <div>
@@ -152,7 +148,6 @@ function AuthForm() {
           </button>
         </form>
 
-        {/* Optional Link */}
         <p className="mt-4 text-center text-sm text-white">
           {isLogin ? "Don't have an account?" : "Already have an account?"}{" "}
           <button

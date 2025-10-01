@@ -59,126 +59,137 @@ const HeroVideoSection = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full h-[200vh]">
+    <div className="relative w-full ">
       {/* Sticky Video Section */}
-      <div className="sticky top-0 h-screen z-10">
-        <AnimatePresence mode="wait">
-          <motion.video
-            key={currentIndex}
-            ref={videoRef}
-            src={videoSources[currentIndex]}
-            autoPlay
-            muted
-            playsInline
-            loop
-            className="absolute w-full h-full object-cover"
-          />
-        </AnimatePresence>
+<div className="sticky top-0 h-screen z-10 bg-[#414A37] overflow-hidden">
+  <AnimatePresence mode="wait">
+    <motion.video
+      key={currentIndex}
+      ref={videoRef}
+      src={videoSources[currentIndex]}
+      autoPlay
+      muted
+      playsInline
+      loop
+      className="absolute inset-0 w-full h-full object-cover"
+    />
+  </AnimatePresence>
 
-        {/* Overlay Content */}
-        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black/40 text-white text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            ✨ Welcome to Chitrakoot यात्रा ✨
-          </h1>
-          <p className="text-lg md:text-xl mb-8">
-            Discover sacred sites. Experience divine beauty.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="/spots"
-              className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold transition"
-            >
-              Explore Spots
-            </a>
-            <a
-              href="/tours"
-              className="bg-white/20 hover:bg-white/30 border border-white text-white px-6 py-3 rounded-full font-semibold transition"
-            >
-              Book Rickshaw Tour
-            </a>
-          </div>
-        </div>
-      </div>
+  {/* Overlay Content */}
+  <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 text-white text-center px-4">
+    <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 leading-snug">
+      ✨ Welcome to <span className="text-yellow-400">Chitrakoot यात्रा</span> ✨
+    </h1>
+
+    <p className="text-base sm:text-lg md:text-xl mb-8 max-w-2xl">
+      Discover sacred sites. Experience divine beauty.
+    </p>
+
+    <div className="flex flex-col sm:flex-row gap-4">
+      <a
+        href="/spots"
+        className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold transition"
+      >
+        Explore Spots
+      </a>
+      <a
+        href="/tours"
+        className="bg-white/20 hover:bg-white/30 border border-white text-white px-6 py-3 rounded-full font-semibold transition"
+      >
+        Book Rickshaw Tour
+      </a>
+    </div>
+  </div>
+</div>
 
       {/* Overlapping Tester */}
-      <div className=" bg-[#414A37] h-screen absolute top-0 z-20 mt-[100vh] w-full flex justify-center">
-        <div className="relative w-full h-screen bg-cover bg-center bg-fixed bg-[url('/assets/chitrakoot-overlay.jpg')] flex flex-col justify-center items-center text-white px-6 py-10">
-          <div className="absolute inset-0 bg-black/60 z-0" />
-          <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-            <motion.img
-              src="/diya.png"
-              className="absolute top-10 right-10 w-12 opacity-100"
-              animate={{ y: [0, 0, 0], rotate: [0, 10, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 6 }}
-            />
-            <motion.img
-              src="/diya.png"
-              className="absolute top-10 left-10 w-12 opacity-100"
-              animate={{ y: [0, 20, 0], rotate: [0, 10, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 6 }}
-            />
-            <motion.img
-              src="/diya.png"
-              className="absolute bottom-5 right-16 w-16 opacity-100"
-              animate={{ y: [0, -20, 0], scale: [1, 1.1, 1] }}
-              transition={{ repeat: Infinity, duration: 8 }}
-            />
-             <motion.img
-              src="/diya.png"
-              className="absolute bottom-5 left-16 w-16 opacity-100"
-              animate={{ y: [0, -20, 0], scale: [1, 1.1, 1] }}
-              transition={{ repeat: Infinity, duration: 8 }}
-            />
-          </div>
+      <div className="bg-[#414A37] relative w-full z-20">
+  {/* Overlay Section */}
+  <div className="relative min-h-screen bg-cover bg-center bg-fixed bg-[url('/assets/chitrakoot-overlay.jpg')] flex flex-col justify-center items-center text-white px-4 md:px-6 py-16 md:py-20">
+    
+    {/* Dark Overlay */}
+    <div className="absolute inset-0 bg-black/60 z-0" />
 
-          <motion.h2
-            className="relative z-10 text-4xl md:text-5xl font-bold text-center mb-4"
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >
-            ✨ Experience the Heart of{" "}
-            <span className="text-yellow-400">Chitrakoot</span> ✨
-          </motion.h2>
+    {/* Floating Diyas */}
+    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+      <motion.img
+        src="/diya.png"
+        className="absolute top-6 right-6 w-10 sm:w-12"
+        animate={{ y: [0, 0, 0], rotate: [0, 10, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 6 }}
+      />
+      <motion.img
+        src="/diya.png"
+        className="absolute top-6 left-6 w-10 sm:w-12"
+        animate={{ y: [0, 20, 0], rotate: [0, 10, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 6 }}
+      />
+      <motion.img
+        src="/diya.png"
+        className="absolute bottom-6 right-10 w-12 sm:w-16"
+        animate={{ y: [0, -20, 0], scale: [1, 1.1, 1] }}
+        transition={{ repeat: Infinity, duration: 8 }}
+      />
+      <motion.img
+        src="/diya.png"
+        className="absolute bottom-6 left-10 w-12 sm:w-16"
+        animate={{ y: [0, -20, 0], scale: [1, 1.1, 1] }}
+        transition={{ repeat: Infinity, duration: 8 }}
+      />
+    </div>
 
-          <motion.p
-            className="relative z-10 text-xl text-center max-w-2xl italic mb-8"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 1 }}
-          >
-            "जहाँ राम बसे, वहीं कल्याण बसे।"
-          </motion.p>
+    {/* Title */}
+    <motion.h2
+      className="relative z-10 text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4"
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
+      ✨ Experience the Heart of{" "}
+      <span className="text-yellow-400">Chitrakoot</span> ✨
+    </motion.h2>
 
-          <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl">
-            {places.map((place, index) => (
-              <motion.div
-                key={index}
-                className="group backdrop-blur-md bg-white/10 border border-white/30 rounded-2xl p-5 text-center shadow-lg transition-transform duration-300 hover:scale-105"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <img
-                  src={place.img}
-                  alt={place.title}
-                  className="w-full h-40 object-cover rounded-xl mb-4 border border-white/20 transition duration-300 group-hover:brightness-110"
-                />
+    {/* Subtitle */}
+    <motion.p
+      className="relative z-10 text-base sm:text-lg md:text-xl text-center max-w-2xl italic mb-8 px-2"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.3, duration: 1 }}
+    >
+      "जहाँ राम बसे, वहीं कल्याण बसे।"
+    </motion.p>
 
-                <h3 className="text-xl font-semibold mb-2 text-white transition-all duration-300 group-hover:text-yellow-300 group-hover:drop-shadow-[0_0_10px_rgba(255,255,0,0.8)]">
-                  {place.title}
-                </h3>
+    {/* Responsive Grid */}
+    <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl px-2 sm:px-4">
+      {places.map((place, index) => (
+        <motion.div
+          key={index}
+          className="group backdrop-blur-md bg-white/10 border border-white/30 rounded-2xl p-4 sm:p-5 text-center shadow-lg transition-transform duration-300 hover:scale-105"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: index * 0.2 }}
+          whileHover={{ scale: 1.05 }}
+        >
+          <img
+            src={place.img}
+            alt={place.title}
+            className="w-full h-36 sm:h-40 object-cover rounded-xl mb-4 border border-white/20 transition duration-300 group-hover:brightness-110"
+          />
 
-                <p className="text-sm text-white/90 transition-colors duration-300 group-hover:text-white group-hover:bg-gradient-to-r group-hover:from-pink-500/20 group-hover:to-blue-500/20 p-2 rounded-lg">
-                  {place.desc}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </div>
+          <h3 className="text-lg sm:text-xl font-semibold mb-2 text-white transition-all duration-300 group-hover:text-yellow-300 group-hover:drop-shadow-[0_0_10px_rgba(255,255,0,0.8)]">
+            {place.title}
+          </h3>
+
+          <p className="text-sm sm:text-base text-white/90 transition-colors duration-300 group-hover:text-white group-hover:bg-gradient-to-r group-hover:from-pink-500/20 group-hover:to-blue-500/20 p-2 rounded-lg">
+            {place.desc}
+          </p>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</div>
+
     </div>
   );
 };

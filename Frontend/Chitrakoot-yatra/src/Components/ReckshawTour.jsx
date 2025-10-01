@@ -4,11 +4,19 @@ import Spot from '../Data/Spot.js'
 
 function ReckshawTour() {
   return (
-    <div className='min-h-screen py-[20vh] px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center' style={{ backgroundColor: "#DBC2A6" }}>
-      {Spot.map((spot, index) => (
-        <BookingCard key={index} {...spot} />
-      ))}
-    </div>
+    <>
+    <div className="w-full min-h-screen bg-[#DBC2A6] flex flex-col items-center pt-[15vh] px-4">
+  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-10">
+    Choose the Destiny
+  </h1>
+  <div className="w-full flex flex-wrap justify-center gap-6">
+    {Spot.map((spot, index) => (
+      <BookingCard key={index} {...spot} />
+    ))}
+  </div>
+</div>
+
+    </>
   )
 }
 
