@@ -14,7 +14,10 @@ Chitrakoot Yatra provides a smooth digital experience for tourists by offering:
 
 📱 Modern UI, mobile-friendly experience
 
+
+
 🚀 Features
+
 🛕 Explore Places
 
 Complete list of Chitrakoot tourist spots
@@ -23,13 +26,17 @@ Photo gallery & detailed descriptions
 
 Google Maps integration for easy navigation
 
+
+
 🗺️ Map Guide
+
 
 Location-based guidance
 
 Route highlights
 
 Distance info
+
 
 🚖 Rickshaw Booking
 
@@ -39,6 +46,7 @@ Driver contact & details
 
 Estimated fare
 
+
 🏨 Hotel Finder
 
 Hotels near tourist spots
@@ -47,6 +55,7 @@ Pricing, facilities, ratings
 
 Contact info
 
+
 🔐 Authentication
 
 User registration
@@ -54,6 +63,7 @@ User registration
 Login with JWT
 
 Secure session handling
+
 
 🛠️ Tech Stack
 Frontend
@@ -80,6 +90,7 @@ MongoDB
 
 Mongoose ORM
 
+
 📂 Project Structure
 /client
    ├── src
@@ -94,10 +105,12 @@ Mongoose ORM
    ├── middleware
    └── config
 
+
 ⚡ Getting Started
 1️⃣ Clone the Repository
 git clone https://github.com/your-username/chitrakoot-yatra.git
 cd chitrakoot-yatra
+
 
 2️⃣ Install Dependencies
 
@@ -112,6 +125,7 @@ Backend
 cd server
 npm install
 
+
 3️⃣ Add Environment Variables
 
 Create .env inside /server:
@@ -119,6 +133,7 @@ Create .env inside /server:
 MONGO_URI=your_mongo_connection_string
 JWT_SECRET=your_secret_key
 PORT=5000
+
 
 4️⃣ Start Development Servers
 
@@ -128,6 +143,7 @@ npm start
 
 
 Server
+
 
 npm run dev
 
@@ -144,6 +160,7 @@ npm run dev
 💳 Online payment integration
 
 📘 Blog section for travel guides
+
 
 👤 Author
 
